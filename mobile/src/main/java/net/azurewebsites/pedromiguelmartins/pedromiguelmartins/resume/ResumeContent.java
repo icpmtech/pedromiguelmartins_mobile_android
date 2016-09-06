@@ -1,4 +1,6 @@
-package net.azurewebsites.pedromiguelmartins.pedromiguelmartins.dummy;
+package net.azurewebsites.pedromiguelmartins.pedromiguelmartins.resume;
+
+import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.Utils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,17 +13,17 @@ import java.util.Map;
  * <p/>
  * TODO: Replace all uses of this class before publishing your app.
  */
-public class DummyContent {
+public class ResumeContent {
 
     /**
-     * An array of sample (dummy) items.
+     * An array of sample (resume) items.
      */
-    public static final List<DummyItem> ITEMS = new ArrayList<DummyItem>();
+    public static final List<ResumeItem> ITEMS = new ArrayList<ResumeItem>();
 
     /**
-     * A map of sample (dummy) items, by ID.
+     * A map of sample (resume) items, by ID.
      */
-    public static final Map<String, DummyItem> ITEM_MAP = new HashMap<String, DummyItem>();
+    public static final Map<String, ResumeItem> ITEM_MAP = new HashMap<String, ResumeItem>();
 
     private static final int COUNT = 25;
 
@@ -32,13 +34,13 @@ public class DummyContent {
         }
     }
 
-    private static void addItem(DummyItem item) {
+    private static void addItem(ResumeItem item) {
         ITEMS.add(item);
         ITEM_MAP.put(item.id, item);
     }
 
-    private static DummyItem createDummyItem(int position) {
-        return new DummyItem(String.valueOf(position), "Item " + position, makeDetails(position));
+    private static ResumeItem createDummyItem(int position) {
+        return new ResumeItem(String.valueOf(position), "Item " + position, makeDetails(position), Utils.GetProjectsListImages()[0]);
     }
 
     private static String makeDetails(int position) {
@@ -51,17 +53,19 @@ public class DummyContent {
     }
 
     /**
-     * A dummy item representing a piece of content.
+     * A resume item representing a piece of content.
      */
-    public static class DummyItem {
+    public static class ResumeItem {
         public final String id;
         public final String content;
         public final String details;
+        public final Integer thumbnail;
 
-        public DummyItem(String id, String content, String details) {
+        public ResumeItem(String id, String content, String details,Integer thumbnail) {
             this.id = id;
             this.content = content;
             this.details = details;
+            this.thumbnail=thumbnail;
         }
 
         @Override

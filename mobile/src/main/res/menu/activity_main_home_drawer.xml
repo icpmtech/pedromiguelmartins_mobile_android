@@ -4,7 +4,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_profile"
-            android:icon="@drawable/ic_assignment"
+            android:icon="@drawable/ic_profile_menu"
             android:title="Profile" />
         <item
             android:id="@+id/nav_timeLine"
@@ -13,7 +13,7 @@
         <item
             android:id="@+id/nav_about_me"
             android:icon="@drawable/ic_account"
-            android:title="About Me" />
+            android:title="About me" />
         <item
             android:id="@+id/nav_resume"
             android:icon="@drawable/ic_account"
@@ -33,7 +33,7 @@
         <menu>
             <item
                 android:id="@+id/nav_technologies"
-                android:icon="@drawable/ic_menu_manage"
+                android:icon="@drawable/ic_menu_tech"
                 android:title="My Technologies" />
             <item
                 android:id="@+id/nav_manage"
