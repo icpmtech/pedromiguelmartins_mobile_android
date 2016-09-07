@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project>
+<resume>
     <entry>
         <id type="text">0</id>
         <title type="text">Specialist</title>
@@ -74,7 +74,7 @@
         </content>
     </entry>
     <entry>
-        <id type="text">3</id>
+        <id type="text">4</id>
         <title type="text">SENIOR CONSULTANT</title>
         <link href="4" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
@@ -93,7 +93,7 @@
         </content>
     </entry>
     <entry>
-        <id type="text">3</id>
+        <id type="text">5</id>
         <title type="text"></title>
         <link href="4" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
@@ -111,7 +111,7 @@
         </content>
     </entry>
     <entry>
-        <id type="text">5</id>
+        <id type="text">6</id>
         <title type="text">SENIOR CONSULTANT</title>
         <link href="14" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
@@ -131,7 +131,7 @@
         </content>
     </entry>
     <entry>
-        <id type="text">6</id>
+        <id type="text">7</id>
         <title type="text">SENIOR CONSULTANT</title>
         <link href="13" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
@@ -145,7 +145,7 @@
         </summary>
     </entry>
     <entry>
-        <id type="text">7</id>
+        <id type="text">8</id>
         <title type="text">SENIOR CONSULTANT</title>
         <link href="10" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
@@ -159,7 +159,7 @@
         </content>
     </entry>
     <entry>
-        <id type="text">8</id>
+        <id type="text">9</id>
         <title type="text">SENIOR CONSULTANT</title>
         <link href="6" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
@@ -175,7 +175,7 @@
         </content>
     </entry>
     <entry>
-        <id type="text">9</id>
+        <id type="text">10</id>
         <title type="text">CONSULTANT</title>
         <link href="5" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
@@ -197,7 +197,7 @@
         </content>
     </entry>
     <entry>
-        <id type="text">10</id>
+        <id type="text">11</id>
         <title type="text">CONSULTANT</title>
         <link href="7" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
@@ -211,7 +211,7 @@
         </content>
     </entry>
     <entry>
-        <id type="text">11</id>
+        <id type="text">12</id>
         <title type="text">CONSULTANT</title>
         <link href="5" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
@@ -227,7 +227,7 @@
         </content>
     </entry>
     <entry>
-        <id type="text">11</id>
+        <id type="text">13</id>
         <title type="text">CONSULTANT</title>
         <link href="11" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
@@ -241,7 +241,7 @@
         </content>
     </entry>
     <entry>
-        <id type="text">11</id>
+        <id type="text">14</id>
         <title type="text">SOFTWARE PROGRAMMER</title>
         <link href="9" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
@@ -259,7 +259,7 @@
 
     </entry>
     <entry>
-        <id type="text">12</id>
+        <id type="text">15</id>
         <title type="text">CONSULTANT</title>
         <link href="12" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
@@ -276,4 +276,166 @@
             Services,Windows Forms,Asp.Net / C#
         </content>
     </entry>
-</project>
+    <entry>
+        <id type="text">16</id>
+        <title type="text">CONSULTANT</title>
+        <link href="12" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text">Adidas Business SA, Maia (Portugal)</details>
+        <summary type="text">
+            Adidas Business SA-06/2010 a 06/2011
+        </summary>
+        <content type="text">
+            Client: Adidas Business SA Date: 06/2010 a 06/2011 Project Description 1: Control
+            Application and payment processing management and document management Function: Analyst
+            and Programmer ▪ Surey and analysis.of requisites ▪ Business model design ▪ Database
+            criation and implementation of the application of document management ▪ Technologies
+            Used: Microsoft SQL Server 2005 and 2008,Microsoft Visual Studio 2010,Web
+            Services,Windows Forms,Asp.Net / C#
+        </content>
+    </entry>
+    <entry>
+        <id type="text">17</id>
+        <title type="text">CONSULTANT</title>
+        <link href="12" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text">Adidas Business SA, Maia (Portugal)</details>
+        <summary type="text">
+            Adidas Business SA-06/2010 a 06/2011
+        </summary>
+        <content type="text">
+            Client: Adidas Business SA Date: 06/2010 a 06/2011 Project Description 1: Control
+            Application and payment processing management and document management Function: Analyst
+            and Programmer ▪ Surey and analysis.of requisites ▪ Business model design ▪ Database
+            criation and implementation of the application of document management ▪ Technologies
+            Used: Microsoft SQL Server 2005 and 2008,Microsoft Visual Studio 2010,Web
+            Services,Windows Forms,Asp.Net / C#
+        </content>
+    </entry>
+    <entry>
+        <id type="text">18</id>
+        <title type="text">CONSULTANT</title>
+        <link href="12" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text">Adidas Business SA, Maia (Portugal)</details>
+        <summary type="text">
+            Adidas Business SA-06/2010 a 06/2011
+        </summary>
+        <content type="text">
+            Client: Adidas Business SA Date: 06/2010 a 06/2011 Project Description 1: Control
+            Application and payment processing management and document management Function: Analyst
+            and Programmer ▪ Surey and analysis.of requisites ▪ Business model design ▪ Database
+            criation and implementation of the application of document management ▪ Technologies
+            Used: Microsoft SQL Server 2005 and 2008,Microsoft Visual Studio 2010,Web
+            Services,Windows Forms,Asp.Net / C#
+        </content>
+    </entry>
+    <entry>
+        <id type="text">19</id>
+        <title type="text">CONSULTANT</title>
+        <link href="12" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text">Adidas Business SA, Maia (Portugal)</details>
+        <summary type="text">
+            Adidas Business SA-06/2010 a 06/2011
+        </summary>
+        <content type="text">
+            Client: Adidas Business SA Date: 06/2010 a 06/2011 Project Description 1: Control
+            Application and payment processing management and document management Function: Analyst
+            and Programmer ▪ Surey and analysis.of requisites ▪ Business model design ▪ Database
+            criation and implementation of the application of document management ▪ Technologies
+            Used: Microsoft SQL Server 2005 and 2008,Microsoft Visual Studio 2010,Web
+            Services,Windows Forms,Asp.Net / C#
+        </content>
+    </entry>
+    <entry>
+        <id type="text">20</id>
+        <title type="text">CONSULTANT</title>
+        <link href="12" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text">Adidas Business SA, Maia (Portugal)</details>
+        <summary type="text">
+            Adidas Business SA-06/2010 a 06/2011
+        </summary>
+        <content type="text">
+            Client: Adidas Business SA Date: 06/2010 a 06/2011 Project Description 1: Control
+            Application and payment processing management and document management Function: Analyst
+            and Programmer ▪ Surey and analysis.of requisites ▪ Business model design ▪ Database
+            criation and implementation of the application of document management ▪ Technologies
+            Used: Microsoft SQL Server 2005 and 2008,Microsoft Visual Studio 2010,Web
+            Services,Windows Forms,Asp.Net / C#
+        </content>
+    </entry>
+    <entry>
+        <id type="text">21</id>
+        <title type="text">CONSULTANT</title>
+        <link href="12" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text">Adidas Business SA, Maia (Portugal)</details>
+        <summary type="text">
+            Adidas Business SA-06/2010 a 06/2011
+        </summary>
+        <content type="text">
+            Client: Adidas Business SA Date: 06/2010 a 06/2011 Project Description 1: Control
+            Application and payment processing management and document management Function: Analyst
+            and Programmer ▪ Surey and analysis.of requisites ▪ Business model design ▪ Database
+            criation and implementation of the application of document management ▪ Technologies
+            Used: Microsoft SQL Server 2005 and 2008,Microsoft Visual Studio 2010,Web
+            Services,Windows Forms,Asp.Net / C#
+        </content>
+    </entry>
+    <entry>
+        <id type="text">22</id>
+        <title type="text">CONSULTANT</title>
+        <link href="12" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text">Adidas Business SA, Maia (Portugal)</details>
+        <summary type="text">
+            Adidas Business SA-06/2010 a 06/2011
+        </summary>
+        <content type="text">
+            Client: Adidas Business SA Date: 06/2010 a 06/2011 Project Description 1: Control
+            Application and payment processing management and document management Function: Analyst
+            and Programmer ▪ Surey and analysis.of requisites ▪ Business model design ▪ Database
+            criation and implementation of the application of document management ▪ Technologies
+            Used: Microsoft SQL Server 2005 and 2008,Microsoft Visual Studio 2010,Web
+            Services,Windows Forms,Asp.Net / C#
+        </content>
+    </entry>
+    <entry>
+        <id type="text">23</id>
+        <title type="text">CONSULTANT</title>
+        <link href="12" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text">Adidas Business SA, Maia (Portugal)</details>
+        <summary type="text">
+            Adidas Business SA-06/2010 a 06/2011
+        </summary>
+        <content type="text">
+            Client: Adidas Business SA Date: 06/2010 a 06/2011 Project Description 1: Control
+            Application and payment processing management and document management Function: Analyst
+            and Programmer ▪ Surey and analysis.of requisites ▪ Business model design ▪ Database
+            criation and implementation of the application of document management ▪ Technologies
+            Used: Microsoft SQL Server 2005 and 2008,Microsoft Visual Studio 2010,Web
+            Services,Windows Forms,Asp.Net / C#
+        </content>
+    </entry>
+    <entry>
+        <id type="text">24</id>
+        <title type="text">CONSULTANT</title>
+        <link href="12" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text">Adidas Business SA, Maia (Portugal)</details>
+        <summary type="text">
+            Adidas Business SA-06/2010 a 06/2011
+        </summary>
+        <content type="text">
+            Client: Adidas Business SA Date: 06/2010 a 06/2011 Project Description 1: Control
+            Application and payment processing management and document management Function: Analyst
+            and Programmer ▪ Surey and analysis.of requisites ▪ Business model design ▪ Database
+            criation and implementation of the application of document management ▪ Technologies
+            Used: Microsoft SQL Server 2005 and 2008,Microsoft Visual Studio 2010,Web
+            Services,Windows Forms,Asp.Net / C#
+        </content>
+    </entry>
+</resume>

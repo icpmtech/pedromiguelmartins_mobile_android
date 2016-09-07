@@ -1,36 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@android:style/TextAppearance.Material.Body1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="2dp">
+    android:padding="2dp"
+    android:touchscreenBlocksFocus="false">
 
     <android.support.v7.widget.CardView
         android:id="@+id/android_card_view_wIdo"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp">
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="47dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#fff"
+
             android:elevation="4dp"
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:forceHasOverlappingRendering="true"
-            android:padding="16dp"
-            >
+            android:padding="16dp">
 
             <ImageView
                 android:id="@+id/cardview_image_wIdo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentStart="false"
                 android:layout_alignParentTop="true"
-                android:layout_marginRight="18dp"
-                android:contentDescription="1"
+                android:contentDescription="@string/_1"
                 android:src="@android:drawable/star_on" />
 
             <TextView
@@ -38,18 +41,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:paddingBottom="5dp"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
                 android:text="@string/user_experience_design"
+                android:textAlignment="center"
                 android:textSize="24sp" />
 
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>
+
     <android.support.v7.widget.CardView
         android:id="@+id/android_card_view_PD"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="248dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -59,8 +68,7 @@
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:forceHasOverlappingRendering="true"
-            android:padding="16dp"
-            >
+            android:padding="16dp">
 
             <ImageView
                 android:id="@+id/cardview_image_PD"
@@ -68,6 +76,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_marginRight="18dp"
+                android:contentDescription="@string/pd"
                 android:src="@android:drawable/star_on" />
 
             <TextView
@@ -82,11 +91,15 @@
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>
+
     <android.support.v7.widget.CardView
         android:id="@+id/android_card_view_SO"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="462dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -96,8 +109,7 @@
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:forceHasOverlappingRendering="true"
-            android:padding="16dp"
-            >
+            android:padding="16dp">
 
             <ImageView
                 android:id="@+id/cardview_image_SO"
@@ -105,6 +117,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_marginRight="18dp"
+                android:contentDescription="@string/so"
                 android:src="@android:drawable/star_on" />
 
             <TextView
@@ -119,11 +132,15 @@
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>
+
     <android.support.v7.widget.CardView
         android:id="@+id/android_card_view_MS"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="676dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -133,8 +150,7 @@
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:forceHasOverlappingRendering="true"
-            android:padding="16dp"
-            >
+            android:padding="16dp">
 
             <ImageView
                 android:id="@+id/cardview_image_MO"
@@ -142,6 +158,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_marginRight="18dp"
+                android:contentDescription="@string/mo"
                 android:src="@android:drawable/star_on" />
 
             <TextView
@@ -156,11 +173,15 @@
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>
+
     <android.support.v7.widget.CardView
         android:id="@+id/android_card_view_ES"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="890dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -170,8 +191,7 @@
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:forceHasOverlappingRendering="true"
-            android:padding="16dp"
-            >
+            android:padding="16dp">
 
             <ImageView
                 android:id="@+id/cardview_image_ES"
@@ -179,6 +199,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_marginRight="18dp"
+                android:contentDescription="@string/es"
                 android:src="@android:drawable/star_on" />
 
             <TextView
@@ -193,11 +214,15 @@
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>
+
     <android.support.v7.widget.CardView
         android:id="@+id/android_card_view_InD"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="1104dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -207,8 +232,7 @@
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:forceHasOverlappingRendering="true"
-            android:padding="16dp"
-            >
+            android:padding="16dp">
 
             <ImageView
                 android:id="@+id/cardview_image_InD"
@@ -216,6 +240,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_marginRight="18dp"
+                android:contentDescription="@string/ind"
                 android:src="@android:drawable/star_on" />
 
             <TextView
@@ -230,11 +255,15 @@
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>
+
     <android.support.v7.widget.CardView
         android:id="@+id/android_card_view_CS"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="1318dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -244,8 +273,7 @@
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:forceHasOverlappingRendering="true"
-            android:padding="16dp"
-            >
+            android:padding="16dp">
 
             <ImageView
                 android:id="@+id/cardview_image_CS"
@@ -253,6 +281,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_marginRight="18dp"
+                android:contentDescription="@string/cs"
                 android:src="@android:drawable/star_on" />
 
             <TextView
@@ -267,11 +296,15 @@
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>
+
     <android.support.v7.widget.CardView
         android:id="@+id/android_card_view_NET"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="1532dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -281,8 +314,7 @@
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:forceHasOverlappingRendering="true"
-            android:padding="16dp"
-            >
+            android:padding="16dp">
 
             <ImageView
                 android:id="@+id/cardview_image_NET"
@@ -290,6 +322,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_marginRight="18dp"
+                android:contentDescription="@string/net"
                 android:src="@android:drawable/star_on" />
 
             <TextView
@@ -304,11 +337,15 @@
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>
+
     <android.support.v7.widget.CardView
         android:id="@+id/android_card_view_Java"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="1746dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -318,8 +355,7 @@
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:forceHasOverlappingRendering="true"
-            android:padding="16dp"
-            >
+            android:padding="16dp">
 
             <ImageView
                 android:id="@+id/cardview_image_Java"
@@ -344,6 +380,4 @@
     </android.support.v7.widget.CardView>
 
 
-
-
-</GridLayout>
+</RelativeLayout>

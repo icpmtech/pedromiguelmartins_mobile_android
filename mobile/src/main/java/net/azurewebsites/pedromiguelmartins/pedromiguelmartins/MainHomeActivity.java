@@ -5,6 +5,7 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.content.res.AssetManager;
+import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -29,6 +30,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 
 import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.project.ProjectContent;
 import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.resume.ResumeContent;
+import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.technology.TechnologyContent;
 import net.sf.andpdf.pdfviewer.PdfViewerActivity;
 
 import java.io.File;
@@ -43,20 +45,29 @@ public class MainHomeActivity extends AppCompatActivity
         TimeLineFragment.OnFragmentInteractionListener,
         ResumeFragment.OnListFragmentInteractionListener,
         AboutMeFragment.OnFragmentInteractionListener,
+        TechnologyFragment.OnListFragmentInteractionListener,
         ProjectFragment.OnListFragmentInteractionListener {
 
+    Toolbar toolbar;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     private GoogleApiClient client;
     private ShareActionProvider mShareActionProvider;
+    private DrawerLayout drawer;
+    private ActionBarDrawerToggle toggle;
+    // nav drawer title
+    private CharSequence mDrawerTitle;
+    // used to store app title
+    private CharSequence mTitle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_home);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        mTitle = mDrawerTitle = getTitle();
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -68,15 +79,20 @@ public class MainHomeActivity extends AppCompatActivity
             }
         });
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+        drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        updateFragment();
+        if (savedInstanceState == null) {
+            // on first time display view for first nav item
+            updateFragment();
+        }
+
+
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
@@ -96,6 +112,7 @@ public class MainHomeActivity extends AppCompatActivity
         ft.replace(R.id.drawer_content, rFragment);
         ft.commit();
     }
+
 
     @Override
     public void onBackPressed() {
@@ -195,19 +212,26 @@ public class MainHomeActivity extends AppCompatActivity
 
         if (id == R.id.nav_timeLine) {
             fragment = new TimeLineFragment();
-        } else if (id == R.id.nav_gallery) {
+
+        } else if (id == R.id.nav_technologies) {
+            fragment = new TechnologyFragment();
+
         } else if (id == R.id.nav_profile) {
             fragment = new HomeFragment();
+
         } else if (id == R.id.nav_projects) {
             fragment = new ProjectFragment();
+
         } else if (id == R.id.nav_about_me) {
             fragment = new AboutMeFragment();
+
         } else if (id == R.id.nav_manage) {
 
 
         } else if (id == R.id.nav_resume) {
 
             fragment = new ResumeFragment();
+
         }  else if (id == R.id.nav_send) {
 
         }
@@ -272,9 +296,33 @@ public class MainHomeActivity extends AppCompatActivity
         client.disconnect();
     }
 
+    @Override
+    public void setTitle(CharSequence title) {
+        super.setTitle(title);
+
+    }
 
     @Override
     public void onListFragmentInteraction(ProjectContent.ProjectItem item) {
+
+    }
+
+    @Override
+    protected void onPostCreate(Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        // Sync the toggle state after onRestoreInstanceState has occurred.
+        toggle.syncState();
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        // Pass any configuration change to the drawer toggls
+        toggle.onConfigurationChanged(newConfig);
+    }
+
+    @Override
+    public void onListFragmentInteraction(TechnologyContent.TechnologyItem item) {
 
     }
 }

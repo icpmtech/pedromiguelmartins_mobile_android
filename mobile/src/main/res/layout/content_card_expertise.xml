@@ -3,7 +3,6 @@
 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ddd"
     android:orientation="vertical"
     android:padding="2dp">
 
@@ -18,10 +17,10 @@
             android:layout_height="wrap_content"
             android:background="#fff"
             android:elevation="4dp"
-            android:padding="16dp"
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:forceHasOverlappingRendering="true"
+            android:padding="16dp"
             >
 
             <ImageView
@@ -30,16 +29,17 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_marginRight="18dp"
+                android:contentDescription="1"
                 android:src="@android:drawable/star_on" />
 
             <TextView
                 android:id="@+id/textView_wIdo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
                 android:paddingBottom="5dp"
-                android:text="User Experience Design"
-                android:textSize="24sp"
-                android:layout_alignParentEnd="true" />
+                android:text="@string/user_experience_design"
+                android:textSize="24sp" />
 
         </RelativeLayout>
 
@@ -55,10 +55,10 @@
             android:layout_height="wrap_content"
             android:background="#fff"
             android:elevation="4dp"
-            android:padding="16dp"
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:forceHasOverlappingRendering="true"
+            android:padding="16dp"
             >
 
             <ImageView
@@ -73,10 +73,10 @@
                 android:id="@+id/textView_PD"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
                 android:paddingBottom="5dp"
-                android:text="Product Design"
-                android:textSize="24sp"
-                android:layout_alignParentEnd="true" />
+                android:text="@string/product_design"
+                android:textSize="24sp" />
 
         </RelativeLayout>
 
@@ -92,10 +92,10 @@
             android:layout_height="wrap_content"
             android:background="#fff"
             android:elevation="4dp"
-            android:padding="16dp"
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:forceHasOverlappingRendering="true"
+            android:padding="16dp"
             >
 
             <ImageView
@@ -110,10 +110,10 @@
                 android:id="@+id/textView_SO"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
                 android:paddingBottom="5dp"
-                android:text="SOA Design"
-                android:textSize="24sp"
-                android:layout_alignParentEnd="true" />
+                android:text="@string/soa_design"
+                android:textSize="24sp" />
 
         </RelativeLayout>
 
@@ -129,10 +129,10 @@
             android:layout_height="wrap_content"
             android:background="#fff"
             android:elevation="4dp"
-            android:padding="16dp"
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:forceHasOverlappingRendering="true"
+            android:padding="16dp"
             >
 
             <ImageView
@@ -147,10 +147,10 @@
                 android:id="@+id/textView_MO"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
                 android:paddingBottom="5dp"
-                android:text="Mobile Solution"
-                android:textSize="24sp"
-                android:layout_alignParentEnd="true" />
+                android:text="@string/mobile_solution"
+                android:textSize="24sp" />
 
         </RelativeLayout>
 
@@ -166,10 +166,10 @@
             android:layout_height="wrap_content"
             android:background="#fff"
             android:elevation="4dp"
-            android:padding="16dp"
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:forceHasOverlappingRendering="true"
+            android:padding="16dp"
             >
 
             <ImageView
@@ -184,10 +184,10 @@
                 android:id="@+id/textView_ES"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
                 android:paddingBottom="5dp"
-                android:text="Entrerprise Solution"
-                android:textSize="24sp"
-                android:layout_alignParentEnd="true" />
+                android:text="@string/entrerprise_solution"
+                android:textSize="24sp" />
 
         </RelativeLayout>
 
@@ -203,10 +203,10 @@
             android:layout_height="wrap_content"
             android:background="#fff"
             android:elevation="4dp"
-            android:padding="16dp"
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:forceHasOverlappingRendering="true"
+            android:padding="16dp"
             >
 
             <ImageView
@@ -221,10 +221,10 @@
                 android:id="@+id/textView_InD"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
                 android:paddingBottom="5dp"
-                android:text="Interface Design"
-                android:textSize="24sp"
-                android:layout_alignParentEnd="true" />
+                android:text="@string/interface_design"
+                android:textSize="24sp" />
 
         </RelativeLayout>
 
@@ -240,10 +240,10 @@
             android:layout_height="wrap_content"
             android:background="#fff"
             android:elevation="4dp"
-            android:padding="16dp"
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:forceHasOverlappingRendering="true"
+            android:padding="16dp"
             >
 
             <ImageView
@@ -258,10 +258,10 @@
                 android:id="@+id/textView_CS"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
                 android:paddingBottom="5dp"
-                android:text="Cloud Solution"
-                android:textSize="24sp"
-                android:layout_alignParentEnd="true" />
+                android:text="@string/cloud_solution"
+                android:textSize="24sp" />
 
         </RelativeLayout>
 
@@ -277,10 +277,10 @@
             android:layout_height="wrap_content"
             android:background="#fff"
             android:elevation="4dp"
-            android:padding="16dp"
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:forceHasOverlappingRendering="true"
+            android:padding="16dp"
             >
 
             <ImageView
@@ -295,10 +295,10 @@
                 android:id="@+id/textView_NET"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
                 android:paddingBottom="5dp"
-                android:text=".NET Solution"
-                android:textSize="24sp"
-                android:layout_alignParentEnd="true" />
+                android:text="@string/net_solution"
+                android:textSize="24sp" />
 
         </RelativeLayout>
 
@@ -314,10 +314,10 @@
             android:layout_height="wrap_content"
             android:background="#fff"
             android:elevation="4dp"
-            android:padding="16dp"
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:forceHasOverlappingRendering="true"
+            android:padding="16dp"
             >
 
             <ImageView
@@ -326,16 +326,17 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_marginRight="18dp"
+                android:contentDescription="@string/java"
                 android:src="@android:drawable/star_on" />
 
             <TextView
                 android:id="@+id/textView_Java"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
                 android:paddingBottom="5dp"
-                android:text="Java Solution"
-                android:textSize="24sp"
-                android:layout_alignParentEnd="true" />
+                android:text="@string/java_solution"
+                android:textSize="24sp" />
 
         </RelativeLayout>
 

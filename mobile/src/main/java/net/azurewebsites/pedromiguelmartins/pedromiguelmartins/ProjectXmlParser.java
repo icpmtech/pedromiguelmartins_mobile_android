@@ -103,6 +103,7 @@ public class ProjectXmlParser {
         String title = null;
         String summary = null;
         String link = null;
+        String id = null;
         String details = null;
         String content = null;
         while (parser.next() != XmlPullParser.END_TAG) {
@@ -119,17 +120,25 @@ public class ProjectXmlParser {
             }
             else if (name.equals("details")) {
                 details = readDetails(parser);
-            }
-            else if (name.equals("link")) {
+            } else if (name.equals("id")) {
+                id = readId(parser);
+            } else if (name.equals("link")) {
                 link = readLink(parser);
             }
             else {
                 skip(parser);
             }
         }
-        return new Entry(title, summary, link,details,content);
+        return new Entry(title, summary, link, details, content, id);
     }
 
+    // Processes details tags in the resume.
+    private String readId(XmlPullParser parser) throws IOException, XmlPullParserException {
+        parser.require(XmlPullParser.START_TAG, ns, "id");
+        String id = readText(parser);
+        parser.require(XmlPullParser.END_TAG, ns, "id");
+        return id;
+    }
     // Processes details tags in the resume.
     private String readContent(XmlPullParser parser) throws IOException, XmlPullParserException  {
         parser.require(XmlPullParser.START_TAG, ns, "content");
@@ -188,6 +197,7 @@ public class ProjectXmlParser {
         return result;
     }
 
+
     // Skips tags the parser isn't interested in. Uses depth to handle nested tags. i.e.,
     // if the next tag after a START_TAG isn't a matching END_TAG, it keeps going until it
     // finds the matching END_TAG (as indicated by the value of "depth" being 0).
@@ -216,13 +226,16 @@ public class ProjectXmlParser {
         public final String details;
         public final String summary;
         public final String content;
+        public final String id;
 
-        private Entry(String title, String summary, String link, String details, String content) {
+        private Entry(String title, String summary, String link, String details, String content, String id) {
             this.title = title;
             this.details = details;
             this.summary = summary;
             this.content = content;
             this.link = link;
+            this.id = id;
         }
+
     }
 }

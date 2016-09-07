@@ -3,41 +3,41 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ddd"
     android:orientation="vertical"
     android:padding="16dp">
 
 
     <TextView
         android:id="@+id/textView6"
+        style="@android:style/TextAppearance.Material.Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ABOUT ME"
-        android:textSize="18sp"
-        android:layout_below="@+id/cardview_list_title"
         android:layout_alignParentEnd="true"
-        android:textAlignment="center"
+        android:layout_below="@+id/cardview_list_title"
         android:layout_gravity="center_horizontal"
+        android:elegantTextHeight="false"
+        android:elevation="4sp"
         android:paddingTop="5dp"
         android:singleLine="false"
-        android:elevation="4sp"
-        android:elegantTextHeight="false" />
+        android:text="ABOUT ME"
+        android:textAlignment="center"
+        android:textSize="18sp" />
     <android.support.v7.widget.CardView
-        style="@style/MyCardViewStyle"
         android:id="@+id/android_card_view_about_me"
+        style="@style/MyCardViewStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+        android:layout_margin="8dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
             android:elevation="4dp"
-            android:padding="16dp"
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:forceHasOverlappingRendering="true"
+            android:padding="16dp"
             >
 
             <ImageView
@@ -50,21 +50,23 @@
 
             <TextView
                 android:id="@+id/textView_abot_me"
+                style="@android:style/TextAppearance.Material.Title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
                 android:paddingBottom="5dp"
                 android:text="OBJECTIVE"
-                android:textSize="24sp"
-                android:layout_alignParentEnd="true" />
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/short_description_about_me"
+                style="@android:style/Widget.Material.TextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="I have been working in Portugal since 2006 to 2016, in following areas - services, billing, innovation, transports, financial markets, Marketing Digital, bank and construction. Technology used are - .Net Platform (2.0 to 4.6), Java Platform, Android Platform, programming languages C#, Javascript, Html, WCF and others. With integration to SQL Server (T-SQL) and various tools for scripting and IIS. In the last years I have explored the Cloud Computing and SOA architectures on self-studying. In the past 2 years I have the team leader of projects on agile methodologies and scrum methods. Simultaneously, I have been developing my skills in the Cloud Computing with the self-learning of the Azure Platform and Courses online of the Microsoft Academy. In the past 2 years, I have worked as a former, project and team manager, and have been responsible for the course of Asp.Net and Azure Integration. I can work on different projects in parallel always focusing on the quality of my work. I&apos;m keen on everything I do and always expect the best from myself. I also try to keep up to date as much as possible through constant trainings. I am a communicative person and try to deal as better as possible with any person."
-                android:textColor="#8b8b8b"
+                android:layout_alignParentEnd="true"
                 android:layout_below="@+id/textView_abot_me"
-                android:layout_alignParentEnd="true" />
+                android:text="I have been working in Portugal since 2006 to 2016, in following areas - services, billing, innovation, transports, financial markets, Marketing Digital, bank and construction. Technology used are - .Net Platform (2.0 to 4.6), Java Platform, Android Platform, programming languages C#, Javascript, Html, WCF and others. With integration to SQL Server (T-SQL) and various tools for scripting and IIS. In the last years I have explored the Cloud Computing and SOA architectures on self-studying. In the past 2 years I have the team leader of projects on agile methodologies and scrum methods. Simultaneously, I have been developing my skills in the Cloud Computing with the self-learning of the Azure Platform and Courses online of the Microsoft Academy. In the past 2 years, I have worked as a former, project and team manager, and have been responsible for the course of Asp.Net and Azure Integration. I can work on different projects in parallel always focusing on the quality of my work. I&apos;m keen on everything I do and always expect the best from myself. I also try to keep up to date as much as possible through constant trainings. I am a communicative person and try to deal as better as possible with any person."
+                android:textColor="#8b8b8b" />
 
         </RelativeLayout>
 
@@ -72,35 +74,36 @@
 
     <TextView
         android:id="@+id/textView7"
+        style="@android:style/TextAppearance.Material.Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="WHAT I DO ?"
-        android:textSize="18sp"
-        android:layout_below="@+id/android_card_view_wIdo"
         android:layout_alignParentEnd="true"
-        android:textAlignment="center"
+        android:layout_below="@+id/android_card_view_wIdo"
         android:layout_gravity="center_horizontal"
+        android:elegantTextHeight="false"
+        android:elevation="4sp"
         android:paddingTop="5dp"
         android:singleLine="false"
-        android:elevation="4sp"
-        android:elegantTextHeight="false" />
+        android:text="WHAT I DO ?"
+        android:textAlignment="center"
+        android:textSize="18sp" />
 
     <android.support.v7.widget.CardView
-        style="@style/MyCardViewStyle"
         android:id="@+id/android_card_view_wIdo"
+        style="@style/MyCardViewStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+        android:layout_margin="8dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
             android:elevation="4dp"
-            android:padding="16dp"
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:forceHasOverlappingRendering="true"
+            android:padding="16dp"
             >
 
             <ImageView
@@ -113,21 +116,23 @@
 
             <TextView
                 android:id="@+id/textView_wIdo"
+                style="@android:style/TextAppearance.Material.Title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
                 android:paddingBottom="5dp"
                 android:text="WHAT I DO"
-                android:textSize="24sp"
-                android:layout_alignParentEnd="true" />
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/short_description_wIdo"
+                style="@android:style/Widget.Material.TextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="I have been working as a Solution Arquictect since. I have a love of clean, elegant styling, and I have lots of experience in the production of Solution on main areas like - Banking, Marketing Digital, innovation to televesion interactive wjth the lots of tecnologies like web with CSS and HTML5 for modern websites.To WCF,WEB API services to core banking. And alots of languages JavaScript,C#,VB6,Java,Jython, PHP and others...So lots of frameworks like as Angular JS,Jquery,WinJs,WPF,Windows Forms,SilverLight,Asp.Net,Jquery Mobile,Dev Express and others... I loving creating awesome as per my clients’ need. I think user experience when I try to craft something for my clients. Making a design solution awesome. And have a passionate to UI/UX"
-                android:textColor="#8b8b8b"
+                android:layout_alignParentEnd="true"
                 android:layout_below="@+id/textView_wIdo"
-                android:layout_alignParentEnd="true" />
+                android:text="I have been working as a Solution Arquictect since. I have a love of clean, elegant styling, and I have lots of experience in the production of Solution on main areas like - Banking, Marketing Digital, innovation to televesion interactive wjth the lots of tecnologies like web with CSS and HTML5 for modern websites.To WCF,WEB API services to core banking. And alots of languages JavaScript,C#,VB6,Java,Jython, PHP and others...So lots of frameworks like as Angular JS,Jquery,WinJs,WPF,Windows Forms,SilverLight,Asp.Net,Jquery Mobile,Dev Express and others... I loving creating awesome as per my clients’ need. I think user experience when I try to craft something for my clients. Making a design solution awesome. And have a passionate to UI/UX"
+                android:textColor="#8b8b8b" />
 
         </RelativeLayout>
 

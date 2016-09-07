@@ -4,6 +4,19 @@
     android:layout_height="match_parent"
     tools:context=".AboutMeFragment">
 
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/content_card_about_me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        </ScrollView>
+
     <com.google.android.gms.plus.PlusOneButton xmlns:plus="http://schemas.android.com/apk/lib/com.google.android.gms.plus"
         android:id="@+id/plus_one_button"
         android:layout_width="wrap_content"
@@ -12,15 +25,4 @@
         plus:size="standard">
 
     </com.google.android.gms.plus.PlusOneButton>
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/scrollView" >
-        <include layout="@layout/content_card_about_me"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
-        </ScrollView>
-
 </FrameLayout>
