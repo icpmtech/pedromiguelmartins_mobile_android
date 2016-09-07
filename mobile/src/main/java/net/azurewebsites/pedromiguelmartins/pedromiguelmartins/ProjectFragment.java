@@ -64,7 +64,7 @@ public class ProjectFragment extends Fragment {
 
         try {
             stream = assetManager.open(urlString);
-            entries = stackOverflowXmlParser.parse(stream);
+            entries = stackOverflowXmlParser.parse(stream, TypeParser.PROJECT);
             // Makes sure that the InputStream is closed after the app is
             // finished using it.
         } finally {
@@ -120,14 +120,14 @@ public class ProjectFragment extends Fragment {
             }
 
             try {
-                recyclerView.setAdapter(new MyProjectRecyclerViewAdapter(loadXmlFromXML(getResources().getString(R.string.URL_RESUME), context), mListener));
+                recyclerView.setAdapter(new MyProjectRecyclerViewAdapter(context, loadXmlFromXML(getResources().getString(R.string.URL_PROJECTS), context), mListener));
                 return view;
             } catch (XmlPullParserException e) {
                 //e.printStackTrace();
             } catch (IOException e) {
                 // e.printStackTrace();
             }
-            recyclerView.setAdapter(new MyProjectRecyclerViewAdapter(ProjectContent.ITEMS, mListener));
+            recyclerView.setAdapter(new MyProjectRecyclerViewAdapter(context, ProjectContent.ITEMS, mListener));
         }
         return view;
     }

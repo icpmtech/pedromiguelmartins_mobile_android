@@ -14,24 +14,24 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
-import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.ProjectFragment.OnListFragmentInteractionListener;
-import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.project.ProjectContent;
+import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.TechnologyFragment.OnListFragmentInteractionListener;
+import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.technology.TechnologyContent;
 
 import java.util.List;
 
 /**
- * {@link RecyclerView.Adapter} that can display a {@link ProjectContent.ProjectItem} and makes a call to the
+ * {@link RecyclerView.Adapter} that can display a {@link TechnologyContent.TechnologyItem} and makes a call to the
  * specified {@link OnListFragmentInteractionListener}.
  * TODO: Replace the implementation with code for your data type.
  */
-public class MyProjectRecyclerViewAdapter extends RecyclerView.Adapter<MyProjectRecyclerViewAdapter.ViewHolder> {
+public class MyTechnologyRecyclerViewAdapter extends RecyclerView.Adapter<MyTechnologyRecyclerViewAdapter.ViewHolder> {
 
-    private final List<ProjectContent.ProjectItem> mValues;
+    private final List<TechnologyContent.TechnologyItem> mValues;
     private final OnListFragmentInteractionListener mListener;
     private Context mContext;
     private String listItemDetailsForPopupMenu;
 
-    public MyProjectRecyclerViewAdapter(Context mContext, List<ProjectContent.ProjectItem> items, OnListFragmentInteractionListener listener) {
+    public MyTechnologyRecyclerViewAdapter(Context mContext, List<TechnologyContent.TechnologyItem> items, OnListFragmentInteractionListener listener) {
         mValues = items;
         this.mContext = mContext;
         mListener = listener;
@@ -40,7 +40,7 @@ public class MyProjectRecyclerViewAdapter extends RecyclerView.Adapter<MyProject
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.fragment_project, parent, false);
+                .inflate(R.layout.fragment_technology, parent, false);
         return new ViewHolder(view);
     }
 
@@ -126,7 +126,7 @@ public class MyProjectRecyclerViewAdapter extends RecyclerView.Adapter<MyProject
         public final TextView mContentView;
         public final TextView mSummaryView;
         public final ImageView thumbnail, overflow;
-        public ProjectContent.ProjectItem mItem;
+        public TechnologyContent.TechnologyItem mItem;
 
         public ViewHolder(View view) {
             super(view);

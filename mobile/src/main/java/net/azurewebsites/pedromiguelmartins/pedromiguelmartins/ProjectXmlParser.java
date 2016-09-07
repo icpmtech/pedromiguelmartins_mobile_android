@@ -16,7 +16,25 @@ public class ProjectXmlParser {
 
     // We don't use namespaces
 
-    public List<Entry> parse(InputStream in) throws XmlPullParserException, IOException {
+    public List<Entry> parse(InputStream in, TypeParser type) throws XmlPullParserException, IOException {
+        switch (type) {
+            case RESUME:
+                return getResume(in);
+
+            case PROJECT:
+                return getProject(in);
+
+
+            case TECNOLOGY:
+                break;
+            case TOOL:
+                break;
+        }
+
+        return null;
+    }
+
+    private List<Entry> getResume(InputStream in) throws XmlPullParserException, IOException {
         try {
             XmlPullParser parser = Xml.newPullParser();
             parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false);
@@ -28,6 +46,36 @@ public class ProjectXmlParser {
         }
     }
 
+    private List<Entry> getProject(InputStream in) throws XmlPullParserException, IOException {
+        try {
+            XmlPullParser parser = Xml.newPullParser();
+            parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false);
+            parser.setInput(in, null);
+            parser.nextTag();
+            return readProject(parser);
+        } finally {
+            in.close();
+        }
+    }
+
+    private List<Entry> readProject(XmlPullParser parser) throws XmlPullParserException, IOException {
+        List<Entry> entries = new ArrayList<Entry>();
+
+        parser.require(XmlPullParser.START_TAG, ns, "project");
+        while (parser.next() != XmlPullParser.END_TAG) {
+            if (parser.getEventType() != XmlPullParser.START_TAG) {
+                continue;
+            }
+            String name = parser.getName();
+            // Starts by looking for the entry tag
+            if (name.equals("entry")) {
+                entries.add(readEntry(parser));
+            } else {
+                skip(parser);
+            }
+        }
+        return entries;
+    }
     private List<Entry> readresume(XmlPullParser parser) throws XmlPullParserException, IOException {
         List<Entry> entries = new ArrayList<Entry>();
 
@@ -45,24 +93,6 @@ public class ProjectXmlParser {
             }
         }
         return entries;
-    }
-
-    // This class represents a single entry (post) in the XML resume.
-    // It includes the data members "title," "link," and "summary."
-    public static class Entry {
-        public final String title;
-        public final String link;
-        public final String details;
-        public final String summary;
-        public final String content;
-
-        private Entry(String title, String summary, String link,String details,String content) {
-            this.title = title;
-            this.details=details;
-            this.summary = summary;
-            this.content = content;
-            this.link = link;
-        }
     }
 
     // Parses the contents of an entry. If it encounters a title, summary, or link tag, hands them
@@ -92,13 +122,14 @@ public class ProjectXmlParser {
             }
             else if (name.equals("link")) {
                 link = readLink(parser);
-            } 
+            }
             else {
                 skip(parser);
             }
         }
         return new Entry(title, summary, link,details,content);
     }
+
     // Processes details tags in the resume.
     private String readContent(XmlPullParser parser) throws IOException, XmlPullParserException  {
         parser.require(XmlPullParser.START_TAG, ns, "content");
@@ -106,6 +137,7 @@ public class ProjectXmlParser {
         parser.require(XmlPullParser.END_TAG, ns, "content");
         return content;
     }
+
     // Processes details tags in the resume.
     private String readDetails(XmlPullParser parser) throws IOException, XmlPullParserException  {
         parser.require(XmlPullParser.START_TAG, ns, "details");
@@ -173,6 +205,24 @@ public class ProjectXmlParser {
                     depth++;
                     break;
             }
+        }
+    }
+
+    // This class represents a single entry (post) in the XML resume.
+    // It includes the data members "title," "link," and "summary."
+    public static class Entry {
+        public final String title;
+        public final String link;
+        public final String details;
+        public final String summary;
+        public final String content;
+
+        private Entry(String title, String summary, String link, String details, String content) {
+            this.title = title;
+            this.details = details;
+            this.summary = summary;
+            this.content = content;
+            this.link = link;
         }
     }
 }

@@ -2,7 +2,6 @@ package net.azurewebsites.pedromiguelmartins.pedromiguelmartins;
 
 import android.app.Fragment;
 import android.content.Context;
-import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
@@ -11,15 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.resume.ResumeContent;
-import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.resume.ResumeContent.ResumeItem;
-
-import org.xmlpull.v1.XmlPullParserException;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
+import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.technology.TechnologyContent;
+import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.technology.TechnologyContent.TechnologyItem;
 
 /**
  * A fragment representing a list of Items.
@@ -27,73 +19,29 @@ import java.util.List;
  * Activities containing this fragment MUST implement the {@link OnListFragmentInteractionListener}
  * interface.
  */
-public class ResumeFragment extends Fragment {
+public class TechnologyFragment extends Fragment {
 
     // TODO: Customize parameter argument names
     private static final String ARG_COLUMN_COUNT = "column-count";
     // TODO: Customize parameters
-    private int mColumnCount = 1;
+    private int mColumnCount = 2;
     private OnListFragmentInteractionListener mListener;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
      * fragment (e.g. upon screen orientation changes).
      */
-    public ResumeFragment() {
+    public TechnologyFragment() {
     }
 
     // TODO: Customize parameter initialization
     @SuppressWarnings("unused")
-    public static ResumeFragment newInstance(int columnCount) {
-        ResumeFragment fragment = new ResumeFragment();
+    public static TechnologyFragment newInstance(int columnCount) {
+        TechnologyFragment fragment = new TechnologyFragment();
         Bundle args = new Bundle();
         args.putInt(ARG_COLUMN_COUNT, columnCount);
         fragment.setArguments(args);
         return fragment;
-    }
-
-    private static List<ResumeItem> loadXmlFromXML(String urlString, Context context) throws XmlPullParserException, IOException {
-        AssetManager assetManager = context.getResources().getAssets();
-        InputStream stream = null;
-        // Instantiate the parser
-        ProjectXmlParser stackOverflowXmlParser = new ProjectXmlParser();
-        List<ProjectXmlParser.Entry> entries = null;
-        String title = null;
-        String url = null;
-        String summary = null;
-
-
-        try {
-            stream = assetManager.open(urlString);
-            entries = stackOverflowXmlParser.parse(stream, TypeParser.RESUME);
-            // Makes sure that the InputStream is closed after the app is
-            // finished using it.
-        } finally {
-            if (stream != null) {
-                stream.close();
-            }
-        }
-
-        // StackOverflowXmlParser returns a List (called "entries") of Entry objects.
-        // Each Entry object represents a single post in the XML feed.
-        // This section processes the entries list to combine each entry with HTML markup.
-        // Each entry is displayed in the UI as a link that optionally includes
-        // a text summary.
-        List<ResumeItem> ITEMS = new ArrayList<ResumeItem>();
-        for (ProjectXmlParser.Entry entry : entries) {
-
-            // If the user set the preference to include summary text,
-            // adds it to the display.
-            Integer value = Integer.parseInt(entry.link);
-            if (value == null)
-                value = 14;
-            Integer res = Utils.GetResumeListImages()[value];
-            if (res == null)
-                res = 14;
-            ITEMS.add(new ResumeItem(entry.title, entry.content, entry.details, entry.summary, res));
-        }
-
-        return ITEMS;
     }
 
     @Override
@@ -108,7 +56,7 @@ public class ResumeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_resume_list, container, false);
+        View view = inflater.inflate(R.layout.fragment_technology_list, container, false);
 
         // Set the adapter
         if (view instanceof RecyclerView) {
@@ -119,15 +67,7 @@ public class ResumeFragment extends Fragment {
             } else {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
             }
-            try {
-                recyclerView.setAdapter(new MyResumeRecyclerViewAdapter(context, loadXmlFromXML(getResources().getString(R.string.URL_RESUME), context), mListener));
-                return view;
-            } catch (XmlPullParserException e) {
-               // e.printStackTrace();
-            } catch (IOException e) {
-              //  e.printStackTrace();
-            }
-            recyclerView.setAdapter(new MyResumeRecyclerViewAdapter(context,ResumeContent.ITEMS, mListener));
+            recyclerView.setAdapter(new MyTechnologyRecyclerViewAdapter(context, TechnologyContent.ITEMS, mListener));
         }
         return view;
     }
@@ -162,6 +102,6 @@ public class ResumeFragment extends Fragment {
      */
     public interface OnListFragmentInteractionListener {
         // TODO: Update argument type and name
-        void onListFragmentInteraction(ResumeItem item);
+        void onListFragmentInteraction(TechnologyItem item);
     }
 }
