@@ -1,8 +1,8 @@
 package net.azurewebsites.pedromiguelmartins.pedromiguelmartins;
 
+import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
-import android.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -10,10 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.dummy.DummyContent;
-import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.dummy.DummyContent.DummyItem;
-
-import java.util.List;
+import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.project.ProjectContent;
 
 /**
  * A fragment representing a list of Items.
@@ -69,7 +66,7 @@ public class ProjectFragment extends Fragment {
             } else {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
             }
-            recyclerView.setAdapter(new MyProjectRecyclerViewAdapter(DummyContent.ITEMS, mListener));
+            recyclerView.setAdapter(new MyProjectRecyclerViewAdapter(ProjectContent.ITEMS, mListener));
         }
         return view;
     }
@@ -103,7 +100,7 @@ public class ProjectFragment extends Fragment {
      * >Communicating with Other Fragments</a> for more information.
      */
     public interface OnListFragmentInteractionListener {
-        // TODO: Update argument type and name
-        void onListFragmentInteraction(DummyItem item);
+
+        void onListFragmentInteraction(ProjectContent.ProjectItem item);
     }
 }

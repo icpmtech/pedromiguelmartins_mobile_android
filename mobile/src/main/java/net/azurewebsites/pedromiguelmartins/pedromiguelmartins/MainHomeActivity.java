@@ -1,5 +1,6 @@
 package net.azurewebsites.pedromiguelmartins.pedromiguelmartins;
 
+import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;
@@ -7,29 +8,26 @@ import android.content.res.AssetManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.app.Fragment;
-import android.support.v4.internal.view.SupportMenuItem;
-import android.support.v4.view.MenuItemCompat;
-import android.support.v7.widget.ShareActionProvider;
-import android.util.Log;
-import android.view.View;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
+import android.support.v4.internal.view.SupportMenuItem;
 import android.support.v4.view.GravityCompat;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.ShareActionProvider;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-
+import android.view.View;
 
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
-import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.dummy.DummyContent;
-import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.resume.ResumeContent;
+import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.project.ProjectContent;
 import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.resume.ResumeContent;
 import net.sf.andpdf.pdfviewer.PdfViewerActivity;
 
@@ -52,6 +50,7 @@ public class MainHomeActivity extends AppCompatActivity
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     private GoogleApiClient client;
+    private ShareActionProvider mShareActionProvider;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,6 +81,7 @@ public class MainHomeActivity extends AppCompatActivity
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
+
     public void updateFragment() {
         /* Getting reference to the FragmentManager */
         FragmentManager fragmentManager = getFragmentManager();
@@ -159,7 +159,7 @@ public class MainHomeActivity extends AppCompatActivity
 
         // Fetch and store ShareActionProvider
         SupportMenuItem shareItem=null;
-        mShareActionProvider = (ShareActionProvider) MenuItemCompat.getActionProvider((SupportMenuItem) shareItem);;
+        mShareActionProvider = (ShareActionProvider) MenuItemCompat.getActionProvider(shareItem);
         // Return true to display menu
         return true;
 
@@ -179,8 +179,6 @@ public class MainHomeActivity extends AppCompatActivity
 
         return super.onOptionsItemSelected(item);
     }
-    private ShareActionProvider mShareActionProvider;
-
 
     // Call to update the share intent
     private void setShareIntent(Intent shareIntent) {
@@ -274,8 +272,9 @@ public class MainHomeActivity extends AppCompatActivity
         client.disconnect();
     }
 
+
     @Override
-    public void onListFragmentInteraction(DummyContent.DummyItem item) {
+    public void onListFragmentInteraction(ProjectContent.ProjectItem item) {
 
     }
 }

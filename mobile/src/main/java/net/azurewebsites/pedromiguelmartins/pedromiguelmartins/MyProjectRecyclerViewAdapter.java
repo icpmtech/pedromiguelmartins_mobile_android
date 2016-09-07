@@ -7,21 +7,21 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.ProjectFragment.OnListFragmentInteractionListener;
-import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.dummy.DummyContent.DummyItem;
+import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.project.ProjectContent;
 
 import java.util.List;
 
 /**
- * {@link RecyclerView.Adapter} that can display a {@link DummyItem} and makes a call to the
+ * {@link RecyclerView.Adapter} that can display a {@link ProjectContent.ProjectItem} and makes a call to the
  * specified {@link OnListFragmentInteractionListener}.
  * TODO: Replace the implementation with code for your data type.
  */
 public class MyProjectRecyclerViewAdapter extends RecyclerView.Adapter<MyProjectRecyclerViewAdapter.ViewHolder> {
 
-    private final List<DummyItem> mValues;
+    private final List<ProjectContent.ProjectItem> mValues;
     private final OnListFragmentInteractionListener mListener;
 
-    public MyProjectRecyclerViewAdapter(List<DummyItem> items, OnListFragmentInteractionListener listener) {
+    public MyProjectRecyclerViewAdapter(List<ProjectContent.ProjectItem> items, OnListFragmentInteractionListener listener) {
         mValues = items;
         mListener = listener;
     }
@@ -36,7 +36,7 @@ public class MyProjectRecyclerViewAdapter extends RecyclerView.Adapter<MyProject
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.mItem = mValues.get(position);
-        holder.mIdView.setText(mValues.get(position).id);
+        holder.mIdView.setText(mValues.get(position).title);
         holder.mContentView.setText(mValues.get(position).content);
 
         holder.mView.setOnClickListener(new View.OnClickListener() {
@@ -60,7 +60,7 @@ public class MyProjectRecyclerViewAdapter extends RecyclerView.Adapter<MyProject
         public final View mView;
         public final TextView mIdView;
         public final TextView mContentView;
-        public DummyItem mItem;
+        public ProjectContent.ProjectItem mItem;
 
         public ViewHolder(View view) {
             super(view);
