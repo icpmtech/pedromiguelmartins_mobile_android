@@ -1,16 +1,12 @@
 package net.azurewebsites.pedromiguelmartins.pedromiguelmartins;
 
+import android.app.Fragment;
 import android.content.Context;
 import android.content.res.AssetManager;
-import android.content.res.Resources;
-import android.graphics.Rect;
 import android.os.Bundle;
-import android.app.Fragment;
-import android.os.Environment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,16 +14,10 @@ import android.view.ViewGroup;
 import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.resume.ResumeContent;
 import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.resume.ResumeContent.ResumeItem;
 
-import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
-import org.xmlpull.v1.XmlPullParserFactory;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -62,15 +52,7 @@ public class ResumeFragment extends Fragment {
         return fragment;
     }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        if (getArguments() != null) {
-            mColumnCount = getArguments().getInt(ARG_COLUMN_COUNT);
-        }
-    }
-    private static List<ResumeItem> loadXmlFromXML(String urlString,Context context) throws XmlPullParserException, IOException {
+    private static List<ResumeItem> loadXmlFromXML(String urlString, Context context) throws XmlPullParserException, IOException {
         AssetManager assetManager = context.getResources().getAssets();
         InputStream stream = null;
         // Instantiate the parser
@@ -81,10 +63,8 @@ public class ResumeFragment extends Fragment {
         String summary = null;
 
 
-
-
         try {
-            stream = assetManager.open("resume/resume.xml");;
+            stream = assetManager.open(urlString);
             entries = stackOverflowXmlParser.parse(stream);
             // Makes sure that the InputStream is closed after the app is
             // finished using it.
@@ -104,16 +84,25 @@ public class ResumeFragment extends Fragment {
 
             // If the user set the preference to include summary text,
             // adds it to the display.
-          Integer value=Integer.parseInt(entry.link);
-            if(value==null)
-                value=14;
-        Integer res=Utils.GetResumeListImages()[value];
-            if(res==null)
-                res=14;
-            ITEMS.add( new ResumeItem(entry.title,entry.content,entry.details,entry.summary,res));
+            Integer value = Integer.parseInt(entry.link);
+            if (value == null)
+                value = 14;
+            Integer res = Utils.GetResumeListImages()[value];
+            if (res == null)
+                res = 14;
+            ITEMS.add(new ResumeItem(entry.title, entry.content, entry.details, entry.summary, res));
         }
 
         return ITEMS;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        if (getArguments() != null) {
+            mColumnCount = getArguments().getInt(ARG_COLUMN_COUNT);
+        }
     }
 
     @Override
@@ -131,7 +120,7 @@ public class ResumeFragment extends Fragment {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
             }
             try {
-                recyclerView.setAdapter(new MyResumeRecyclerViewAdapter(context,loadXmlFromXML("", context), mListener));
+                recyclerView.setAdapter(new MyResumeRecyclerViewAdapter(context, loadXmlFromXML(getResources().getString(R.string.URL_RESUME), context), mListener));
                 return view;
             } catch (XmlPullParserException e) {
                // e.printStackTrace();

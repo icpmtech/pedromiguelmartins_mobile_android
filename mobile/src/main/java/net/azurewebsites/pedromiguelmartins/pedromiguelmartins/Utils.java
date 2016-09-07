@@ -2,7 +2,7 @@ package net.azurewebsites.pedromiguelmartins.pedromiguelmartins;
 
 import org.jetbrains.annotations.Contract;
 
-import static net.azurewebsites.pedromiguelmartins.pedromiguelmartins.R.*;
+import static net.azurewebsites.pedromiguelmartins.pedromiguelmartins.R.drawable;
 
 /**
  * Created by migue_000 on 30/08/2016.
@@ -81,6 +81,7 @@ public  class  Utils {
 
         };
     }
+
     /**
      * @return
      */
