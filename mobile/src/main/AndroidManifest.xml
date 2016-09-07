@@ -17,22 +17,22 @@
         <activity
             android:name=".ProjectsActivity"
             android:label="@string/title_activity_projects"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName=".MainHomeActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <category android:name="android.intent.category.DEFAULT" />
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="net.azurewebsites.pedromiguelmartins.pedromiguelmartins.MainActivity" />
+                android:value="net.azurewebsites.pedromiguelmartins.pedromiguelmartins.MainHomeActivity" />
         </activity>
         <activity
             android:name=".ActivityPdf"
             android:label="@string/title_activity_activitydf"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName=".MainHomeActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="net.azurewebsites.pedromiguelmartins.pedromiguelmartins.MainActivity" />
+                android:value="net.azurewebsites.pedromiguelmartins.pedromiguelmartins.MainHomeActivity" />
         </activity>
         <!--
  ATTENTION: This was auto-generated to add Google Play services to your project for
@@ -51,6 +51,15 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".ResumeDetailsActivity"
+            android:label="@string/title_activity_resume_details"
+            android:parentActivityName=".MainHomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.azurewebsites.pedromiguelmartins.pedromiguelmartins.MainHomeActivity" />
         </activity>
     </application>
 

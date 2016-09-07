@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="0sp"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cv"
+        android:elevation="8sp"
+        android:fadeScrollbars="false"
+        android:layout_margin="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            >
+
+            <in.championswimmer.libsocialbuttons.fabs.FABFacebook
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:id="@+id/view"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+            <in.championswimmer.libsocialbuttons.fabs.FABGoogleplus
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:id="@+id/view2"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/view" />
+            <in.championswimmer.libsocialbuttons.fabs.FABLinkedin
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:id="@+id/view3"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/view2" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

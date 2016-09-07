@@ -23,7 +23,7 @@
             android:icon="@drawable/ic_menu_gallery"
             android:title="Gallery" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_projects"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Projects" />
 
@@ -44,10 +44,7 @@
 
     <item android:title="Communicate">
         <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+
             <item
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_menu_send"

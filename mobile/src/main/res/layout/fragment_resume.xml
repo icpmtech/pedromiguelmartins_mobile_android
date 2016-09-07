@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:elevation="8dp"
-    android:fadeScrollbars="true">
+    android:fadeScrollbars="false">
 
     <android.support.v7.widget.CardView
         android:id="@+id/card_view"
@@ -11,23 +11,37 @@
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:layout_margin="@dimen/card_margin"
-        android:elevation="3dp"
-        card_view:cardCornerRadius="@dimen/card_album_radius">
+
+        style="@style/MyCardViewStyle"
+        android:fadeScrollbars="false">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/summary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
 
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textColor="@color/album_title"
+                android:textSize="@dimen/album_title"
+                android:layout_above="@+id/id"
+                android:layout_toEndOf="@+id/thumbnail" />
             <ImageView
                 android:id="@+id/thumbnail"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/album_cover_height"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_below="@id/thumbnail"
                 android:clickable="true"
                 android:scaleType="fitXY" />
 
             <TextView
                 android:id="@+id/id"
+                style="@style/Base.TextAppearance.AppCompat.Headline"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/thumbnail"
@@ -38,6 +52,7 @@
                 android:textSize="@dimen/album_title" />
 
             <TextView
+                style="@style/Base.TextAppearance.AppCompat.Body1"
                 android:id="@+id/content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -48,14 +63,17 @@
                 android:textSize="@dimen/songs_count" />
 
             <ImageView
+                android:elevation="8dp"
                 android:id="@+id/overflow"
                 android:layout_width="@dimen/ic_album_overflow_width"
                 android:layout_height="@dimen/ic_album_overflow_height"
-                android:layout_alignParentRight="true"
                 android:layout_below="@id/thumbnail"
                 android:layout_marginTop="@dimen/ic_album_overflow_margin_top"
                 android:scaleType="centerCrop"
-                android:src="@drawable/ic_dots" />
+                android:src="@drawable/ic_dots"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="true" />
 
         </RelativeLayout>
 

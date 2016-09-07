@@ -2,16 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content" android:layout_height="wrap_content"
     android:padding="0sp"
-    android:elevation="8sp">
+    >
 
     <android.support.v7.widget.CardView
-        style="@style/MyCardViewStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/cv"
-        android:elevation="8sp"
-        android:fadeScrollbars="false"
-        android:layout_margin="8dp">
+        android:id="@+id/details"
+        android:elevation="4dp"
+        android:fadeScrollbars="false">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -19,17 +17,16 @@
             android:padding="16dp"
             >
 
-            <Button
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/getCV"
-                android:text="View CV"
+                android:id="@+id/details_resume"
+                android:text=""
                 android:textSize="18sp"
                 android:layout_gravity="center"
 
                 android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_margin="8dp" />
+                android:layout_alignParentEnd="true" />
 
 
         </RelativeLayout>

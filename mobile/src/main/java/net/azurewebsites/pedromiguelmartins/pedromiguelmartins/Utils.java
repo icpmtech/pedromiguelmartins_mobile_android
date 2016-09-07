@@ -58,6 +58,29 @@ public  class  Utils {
 
         };
     }
+    public static Integer[] GetResumeListImages()
+    {
+        return  new Integer  [] {
+                drawable.logo_altran,
+                drawable.nls_logo,
+                drawable.logo_sparkle,
+                drawable.affinity_logo,
+                drawable.quantico_white_logo,
+                drawable.nos_logo,
+                drawable.logo_novabase,
+                drawable.logo_publico,
+                drawable.logo_kcs_it,
+                drawable.exago_logo,
+                drawable.logo_ludite,
+                drawable.bto_logo,
+                drawable.logo_adidas,
+                drawable.ic_launcher,
+                drawable.logo_sibs
+
+
+
+        };
+    }
     /**
      * @return
      */

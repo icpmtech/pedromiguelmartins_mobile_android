@@ -9,6 +9,9 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.app.Fragment;
+import android.support.v4.internal.view.SupportMenuItem;
+import android.support.v4.view.MenuItemCompat;
+import android.support.v7.widget.ShareActionProvider;
 import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -20,10 +23,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
+import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.dummy.DummyContent;
 import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.resume.ResumeContent;
 import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.resume.ResumeContent;
 import net.sf.andpdf.pdfviewer.PdfViewerActivity;
@@ -39,7 +44,8 @@ public class MainHomeActivity extends AppCompatActivity
         HomeFragment.OnFragmentInteractionListener,
         TimeLineFragment.OnFragmentInteractionListener,
         ResumeFragment.OnListFragmentInteractionListener,
-        AboutMeFragment.OnFragmentInteractionListener {
+        AboutMeFragment.OnFragmentInteractionListener,
+        ProjectFragment.OnListFragmentInteractionListener {
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -146,8 +152,17 @@ public class MainHomeActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
+        // Inflate menu resource file.
         getMenuInflater().inflate(R.menu.main_home, menu);
+        // Locate MenuItem with ShareActionProvider
+        MenuItem item = menu.findItem(R.id.action_share);
+
+        // Fetch and store ShareActionProvider
+        SupportMenuItem shareItem=null;
+        mShareActionProvider = (ShareActionProvider) MenuItemCompat.getActionProvider((SupportMenuItem) shareItem);;
+        // Return true to display menu
         return true;
+
     }
 
     @Override
@@ -164,8 +179,15 @@ public class MainHomeActivity extends AppCompatActivity
 
         return super.onOptionsItemSelected(item);
     }
+    private ShareActionProvider mShareActionProvider;
 
 
+    // Call to update the share intent
+    private void setShareIntent(Intent shareIntent) {
+        if (mShareActionProvider != null) {
+            mShareActionProvider.setShareIntent(shareIntent);
+        }
+    }
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -178,8 +200,8 @@ public class MainHomeActivity extends AppCompatActivity
         } else if (id == R.id.nav_gallery) {
         } else if (id == R.id.nav_profile) {
             fragment = new HomeFragment();
-        } else if (id == R.id.nav_slideshow) {
-
+        } else if (id == R.id.nav_projects) {
+            fragment = new ProjectFragment();
         } else if (id == R.id.nav_about_me) {
             fragment = new AboutMeFragment();
         } else if (id == R.id.nav_manage) {
@@ -188,9 +210,7 @@ public class MainHomeActivity extends AppCompatActivity
         } else if (id == R.id.nav_resume) {
 
             fragment = new ResumeFragment();
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
+        }  else if (id == R.id.nav_send) {
 
         }
         if (fragment != null) {
@@ -252,5 +272,10 @@ public class MainHomeActivity extends AppCompatActivity
         );
         AppIndex.AppIndexApi.end(client, viewAction);
         client.disconnect();
+    }
+
+    @Override
+    public void onListFragmentInteraction(DummyContent.DummyItem item) {
+
     }
 }

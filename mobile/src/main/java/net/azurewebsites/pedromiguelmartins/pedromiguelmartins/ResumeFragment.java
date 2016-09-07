@@ -1,10 +1,12 @@
 package net.azurewebsites.pedromiguelmartins.pedromiguelmartins;
 
 import android.content.Context;
+import android.content.res.AssetManager;
 import android.content.res.Resources;
 import android.graphics.Rect;
 import android.os.Bundle;
 import android.app.Fragment;
+import android.os.Environment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -15,6 +17,19 @@ import android.view.ViewGroup;
 
 import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.resume.ResumeContent;
 import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.resume.ResumeContent.ResumeItem;
+
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserException;
+import org.xmlpull.v1.XmlPullParserFactory;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A fragment representing a list of Items.
@@ -55,6 +70,51 @@ public class ResumeFragment extends Fragment {
             mColumnCount = getArguments().getInt(ARG_COLUMN_COUNT);
         }
     }
+    private static List<ResumeItem> loadXmlFromXML(String urlString,Context context) throws XmlPullParserException, IOException {
+        AssetManager assetManager = context.getResources().getAssets();
+        InputStream stream = null;
+        // Instantiate the parser
+        ProjectXmlParser stackOverflowXmlParser = new ProjectXmlParser();
+        List<ProjectXmlParser.Entry> entries = null;
+        String title = null;
+        String url = null;
+        String summary = null;
+
+
+
+
+        try {
+            stream = assetManager.open("resume/resume.xml");;
+            entries = stackOverflowXmlParser.parse(stream);
+            // Makes sure that the InputStream is closed after the app is
+            // finished using it.
+        } finally {
+            if (stream != null) {
+                stream.close();
+            }
+        }
+
+        // StackOverflowXmlParser returns a List (called "entries") of Entry objects.
+        // Each Entry object represents a single post in the XML feed.
+        // This section processes the entries list to combine each entry with HTML markup.
+        // Each entry is displayed in the UI as a link that optionally includes
+        // a text summary.
+        List<ResumeItem> ITEMS = new ArrayList<ResumeItem>();
+        for (ProjectXmlParser.Entry entry : entries) {
+
+            // If the user set the preference to include summary text,
+            // adds it to the display.
+          Integer value=Integer.parseInt(entry.link);
+            if(value==null)
+                value=14;
+        Integer res=Utils.GetResumeListImages()[value];
+            if(res==null)
+                res=14;
+            ITEMS.add( new ResumeItem(entry.title,entry.content,entry.details,entry.summary,res));
+        }
+
+        return ITEMS;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -69,6 +129,14 @@ public class ResumeFragment extends Fragment {
                 recyclerView.setLayoutManager(new LinearLayoutManager(context));
             } else {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
+            }
+            try {
+                recyclerView.setAdapter(new MyResumeRecyclerViewAdapter(context,loadXmlFromXML("", context), mListener));
+                return view;
+            } catch (XmlPullParserException e) {
+               // e.printStackTrace();
+            } catch (IOException e) {
+              //  e.printStackTrace();
             }
             recyclerView.setAdapter(new MyResumeRecyclerViewAdapter(context,ResumeContent.ITEMS, mListener));
         }
@@ -85,51 +153,6 @@ public class ResumeFragment extends Fragment {
             throw new RuntimeException(context.toString()
                     + " must implement OnListFragmentInteractionListener");
         }
-    }
-    /**
-     * RecyclerView item decoration - give equal margin around grid item
-     */
-    public class GridSpacingItemDecoration extends RecyclerView.ItemDecoration {
-
-        private int spanCount;
-        private int spacing;
-        private boolean includeEdge;
-
-        public GridSpacingItemDecoration(int spanCount, int spacing, boolean includeEdge) {
-            this.spanCount = spanCount;
-            this.spacing = spacing;
-            this.includeEdge = includeEdge;
-        }
-
-        @Override
-        public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
-            int position = parent.getChildAdapterPosition(view); // item position
-            int column = position % spanCount; // item column
-
-            if (includeEdge) {
-                outRect.left = spacing - column * spacing / spanCount; // spacing - column * ((1f / spanCount) * spacing)
-                outRect.right = (column + 1) * spacing / spanCount; // (column + 1) * ((1f / spanCount) * spacing)
-
-                if (position < spanCount) { // top edge
-                    outRect.top = spacing;
-                }
-                outRect.bottom = spacing; // item bottom
-            } else {
-                outRect.left = column * spacing / spanCount; // column * ((1f / spanCount) * spacing)
-                outRect.right = spacing - (column + 1) * spacing / spanCount; // spacing - (column + 1) * ((1f /    spanCount) * spacing)
-                if (position >= spanCount) {
-                    outRect.top = spacing; // item top
-                }
-            }
-        }
-    }
-
-    /**
-     * Converting dp to pixel
-     */
-    private int dpToPx(int dp) {
-        Resources r = getResources();
-        return Math.round(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, r.getDisplayMetrics()));
     }
 
     @Override
