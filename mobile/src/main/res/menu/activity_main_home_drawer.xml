@@ -29,6 +29,8 @@
 
 
     </group>
+
+
     <item android:title="How i do">
         <menu>
             <item
@@ -36,7 +38,7 @@
                 android:icon="@drawable/ic_menu_tech"
                 android:title="My Technologies" />
             <item
-                android:id="@+id/nav_manage"
+                android:id="@+id/nav_tool"
                 android:icon="@drawable/ic_menu_manage"
                 android:title="My Tools" />
         </menu>
@@ -51,5 +53,6 @@
                 android:title="Send" />
         </menu>
     </item>
+
 
 </menu>

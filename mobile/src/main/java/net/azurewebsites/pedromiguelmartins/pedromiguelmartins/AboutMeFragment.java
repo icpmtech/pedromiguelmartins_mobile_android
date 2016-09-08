@@ -20,11 +20,11 @@ import com.google.android.gms.plus.PlusOneButton;
  */
 public class AboutMeFragment extends Fragment {
 
-  
+
     // The request code must be 0 or greater.
     private static final int PLUS_ONE_REQUEST_CODE = 0;
     // The URL to +1.  Must be a valid URL.
-    private final String PLUS_ONE_URL = "http://pedromiguelmartins.azurewebsites.net/";
+    private final String PLUS_ONE_URL = "http://pedromiguelmartins.azurewebsites.net/#about";
 
     private PlusOneButton mPlusOneButton;
 

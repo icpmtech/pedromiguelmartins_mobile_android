@@ -89,7 +89,7 @@ public class ResumeFragment extends Fragment {
             Integer res = Utils.GetResumeListImages()[value];
             if (res == null)
                 res = 14;
-            ITEMS.add(new ResumeItem(entry.title, entry.content, entry.details, entry.summary, res));
+            ITEMS.add(new ResumeItem(entry.title, entry.content, entry.details, entry.summary, res, entry.id));
         }
 
         return ITEMS;

@@ -2,360 +2,251 @@
 <resume>
     <entry>
         <id type="text">0</id>
-        <title type="text">Specialist</title>
+        <title type="text">Asp.net</title>
         <link href="0" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text">Altran ,Porto (Portugal)</details>
+        <details type="text">Learn About ASP.NET MVC</details>
         <summary type="text">
-            Altran-Present
+            ASP.NET MVC
         </summary>
         <content type="text">
-            Company: Altran Project Scope: Design ERP solution. Tecnologies: Angular JS, Java,Spring
-            Boot,ECMASCRIPT V6.
+            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and that gives you full control over markup for
+            enjoyable, agile development. ASP.NET MVC includes many features that enable fast,
+            TDD-friendly development for creating sophisticated applications that use the latest web
+            standards.
         </content>
     </entry>
     <entry>
         <id type="text">1</id>
-        <title type="text">.NET SENIOR CONSULTANT &amp; ARCHITECT</title>
+        <title type="text">AngularJS</title>
         <link href="1" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text">New Link Solutions, Lisbon (Portugal)</details>
+        <details type="text"></details>
         <summary type="text">
-            Hmr, Lisbon (Portugal)-2016
+
         </summary>
         <content type="text">
-            Company: New Link Solutions Client:Hmr, Lisbon (Portugal) Sector: Health Project Scope:
-            Create Orchestrator of process.To run other applications in workflow process. Project
-            Contribution; ▪ Solution Architect for .net applications; ▪ Design the UX/UI to mobile
-            applications and web responsive solutions. ▪ Responsible for technologies choices to the
-            solutions; ▪ Development on Agile Methodologies (SCRUM). Function: .Net Solution
-            Architect and Innovation Manager Technologies used: ASP.NET,MVC4.5, MVC5, SQL SERVER
-            2014, C#, Web Services,WCF,Json Javascript,Html5,Asp.net Web Forms,Web Api,Entity
-            Framework,Windows Services
+
         </content>
     </entry>
     <entry>
         <id type="text">2</id>
-        <title type="text">.NET SOLUTION ARCHITECT &amp; INNOVATION MANAGER</title>
+        <title type="text">HTML/CSS/JAVASCRIPT</title>
         <link href="2" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text">Sparkle IT SA, Lisbon (Portugal)</details>
+        <details type="text"></details>
         <summary type="text">
-            Sparkle IT SA, Lisbon(Portugal)-2015/2016
+
         </summary>
         <content type="text">
-            Company: Sparkle IT SA Client: Sparkle IT SA, Lisbon (Portugal) Sector: Construction
-            Project Scope: Innovation manager of the solutions in construction market. Creator of
-            one ERP to civil construction to the Euromib SA. Mobile applications to the construction
-            markets. Project Contribution; ▪ Interviews and selection of team members; ▪ Coordinator
-            of the teams. ▪ Solution Architect for .net applications; ▪ Design the UX/UI to mobile
-            applications and web responsive solutions. ▪ Responsible for technologies choices to the
-            solutions; ▪ Coordination of Development teams on Agile Methodologies (SCRUM). Function:
-            .Net Solution Architect and Innovation Manager Technologies used: ASP.NET,MVC4.5, MVC5,
-            SQL SERVER 2012, C#, Web Services,WCF,Json Javascript,Html5,DevExpress Framework,Asp.net
-            Web Forms,Web Api,Entity Framework,Cordova,Windows Mobile,Windows Store
+
         </content>
     </entry>
     <entry>
         <id type="text">3</id>
-        <title type="text">SENIOR CONSULTANT</title>
+        <title type="text">Spring Framework</title>
         <link href="3" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text">Affinity, Lisbon (Portugal)</details>
+        <details type="text"></details>
         <summary type="text">
-            Affinity SA Lisbon(Portugal)-2015
+
         </summary>
         <content type="text">
-            Company: Affinity Client: Affinity Sector: Services Project Scope: Former of Asp.net 4.5
-            course and Azure Integration Project Contribution; ▪ Train junior consultants with the
-            ASP.net; ▪ Teaching the juniors with the technologies of the course. Function: Former
-            Technologies used: ASP.NET,MVC4.5, MVC5, SQL SERVER 2012, C#, Web Services,WCF,Json
-            Javascript,Html5,Azure Plataform,Asp.net Web Forms,Web Api,Entity
+
         </content>
     </entry>
     <entry>
         <id type="text">4</id>
-        <title type="text">SENIOR CONSULTANT</title>
+        <title type="text">JAVA EE</title>
         <link href="4" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text">Affinity, Lisbon (Portugal)</details>
+        <details type="text"></details>
         <summary type="text">
-            Quantico SA, Lisbon (Portugal)( InterMoney)-2015
+
         </summary>
         <content type="text">
-            Company: Affinity Client:Quantico SA, Lisbon (Portugal)( InterMoney) Sector: Financial
-            Markets Project Scope: Design one SOA application to Financial Markets and support
-            process to traders. Analysis , implementation, Solution Architect ... Project
-            Contribution; ▪ Solution design; ▪ Responsible for technologies choices to the solution;
-            Coordination of Development teams on Agile Methodologies (SCRUM). Function: Senior
-            consultant Technologies used: ASP.NET,MVC4.5, SQL SERVER 2012, C#, Web Services,WCF,Json
-            Javascript,Html5,DevExpress Framework,Asp.net Web Forms,Web Api,Entity Framework,XAF
+
         </content>
     </entry>
     <entry>
         <id type="text">5</id>
-        <title type="text"></title>
+        <title type="text">.net</title>
         <link href="4" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text">Affinity, Lisbon (Portugal)</details>
+        <details type="text"></details>
         <summary type="text">
-            Quantico SA, Lisbon (Portugal)( InterMoney)-2015
+
         </summary>
         <content type="text">
-            Company:Quantico SA, Lisbon (Portugal)( InterMoney) Project Scope: Design of a CMS site
-            energy auctions on SOA platform. Internal Framework support, among other analysis
-            products , implementation, Project Contribution; ▪ Solution design; ▪ Responsible for
-            technologies choices to the solution; Coordination of Development teams on Agile
-            Methodologies (SCRUM). Function: Senior consultant Technologies used: ASP.NET,MVC4.5,
-            SQL SERVER 2012, C#, Web Services,WCF,Json Javascript,Html5,Entity Framework
+
         </content>
     </entry>
     <entry>
         <id type="text">6</id>
-        <title type="text">SENIOR CONSULTANT</title>
+        <title type="text"></title>
         <link href="14" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text">Affinity, Lisbon (Portugal)</details>
-        <summary type="text">SIBS Lisbon (Portugal)-2013/2015</summary>
-        <content type="text">Company: AFFINITY Client: SIBS Lisbon (Portugal) Sector: Banking Date:
-            2013 - 2015 Project Scope: Development of an payment distributed system (SIBS) Project
-            Contribution; ▪ Support the Analysis of the architecture and design of the same project
-            (ARCTIC); ▪ Implemented Backends Architecture on Java EE ▪ Implementation of components
-            in JEE ▪ Administration WebSphere 8.5 ▪ Release management and design as well as create
-            and design architecture and support processes Quality and Release process. ▪ Senior
-            Administrator of Webpshere 8.5 administrator as well creation of jython scripting
-            support to management applications from install as well.as necessary resources ▪
-            Customer support to integration delivering ▪ Code review and Release Management
-            Function: Senior consultant Technologies used: Java EE, Postilion Framework
-            SDK,TFS,Jenkins,Maven,Nexus,Eclipse,JEE6,IntelliJ
+        <details type="text"></details>
+        <summary type="text"></summary>
+        <content type="text">
         </content>
     </entry>
     <entry>
         <id type="text">7</id>
-        <title type="text">SENIOR CONSULTANT</title>
+        <title type="text"></title>
         <link href="13" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text">Pedro Martins, Lisbon (Portugal)</details>
-        <summary type="text">Pedro Martins Lisbon (Portugal)-2015</summary>
-        <summary type="text">Company:Pedro Martins Client: Pedro Martins Lisbon (Portugal) Date:
-            2015 Project Scope: mobile application pedrommartins.com Function: Senior Consultant ▪
-            Analysis and estimation of requisites; ▪ Implemented the application pedrommartins.com;
-            ▪ Deploy to Windows Store. Technologies used: Windows Mobile, .NET 4.5, C#, SOAP, WCF,
-            SQL, ENTITY FRAMEWORK, LINQ
+        <details type="text"></details>
+        <summary type="text"></summary>
+        <summary type="text">
         </summary>
     </entry>
     <entry>
         <id type="text">8</id>
-        <title type="text">SENIOR CONSULTANT</title>
+        <title type="text"></title>
         <link href="10" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text">Pedro Martins, Lisbon (Portugal)</details>
-        <summary type="text">Ludite Porto (Portugal)-2014/2015</summary>
-        <content type="text">Company:Ludite Client: Ludite Porto (Portugal) Date: 2014 to 2015
-            Project Scope : Store application Ludite Sa on Store Windows Function: Senior Consultant
-            ▪ Analysis and estimation of requisites; ▪ Implemented the application Ludite Sa on
-            Store Windows; ▪ Deploy to Windows Store. Technologies used: WinJs, .NET 4.5, C#, SOAP,
-            WCF, SQL, ENTITY FRAMEWORK, LINQ
+        <details type="text"></details>
+        <summary type="text"></summary>
+        <content type="text">
         </content>
     </entry>
     <entry>
         <id type="text">9</id>
-        <title type="text">SENIOR CONSULTANT</title>
+        <title type="text"></title>
         <link href="6" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text">Affinity, Lisbon (Portugal)</details>
-        <summary type="text">Novabase/OCTAL ENGINEERING Lisbon (Portugal)-11/2012 to 03/2013
+        <details type="text"></details>
+        <summary type="text">
         </summary>
-        <content type="text">Company: Affinity Client: Novabase/OCTAL ENGINEERING Lisbon (Portugal)
-            Sector: Transports and Ticketing Date: 10/2012 to 01/2013 Project Scope: Developement of
-            a ticketing system on distributed services Project Contribution: ▪ Analysis of
-            architecture and design of the same; ▪ Creation of Backends (WCF) for use by Frontends
-            (Html5 +Jquery+JqueryEasyui). Function: Senior consultant Technologies used:
-            ASP.NET,MVC4, SQL SERVER 2012, C#, Web Services,WCF,Json Javascript,Html5
+        <content type="text">
         </content>
     </entry>
     <entry>
         <id type="text">10</id>
-        <title type="text">CONSULTANT</title>
+        <title type="text"></title>
         <link href="5" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text">KCS IT, Lisbon (Portugal)</details>
-        <summary type="text">ZON MULTIMEDIA Lisbon (Portugal)-08/2012 to 09/2012</summary>
-        <content type="text">Company: KCS IT Client: ZON MULTIMEDIA Lisbon (Portugal) Date: 08/2012
-            to 09/2012 Project Scope 1: Zon Box Iris- Widget ZonSagres2011/2012 Project
-            Contribution: ▪ Development of widgets Html to Javascript; ▪ Analysis of architecture
-            and drawing the,same; ▪ Creation of Backends(WCF) for used by Frontends(Widgets Html
-            +Javascript). Technologies used: ASP.NET, XML, SQL SERVER 2008, C#, Web
-            Services,WCF,Javascript,xHtml,Ajax Project Scope 2: Zon Box Iris- Widget Bolsa Project
-            Contribution: ▪ Development of widgets Html to Javascript; ▪ Analysis of architecture
-            and design of.the same; ▪ Creation of Backends(WCF) for used by Frontends(Widgets Html
-            +Javascript). Technologies used: ASP.NET, XML, SQL SERVER 2008, C#, Web Services,WCF
-            Project Scope 3: CMS Project Contribution: ▪ Development of CMS for creation of an
-            information design specification in XML whit a parser Html and manipulation in Jquery
-            and Javascript as well.as Jquery UI; ▪ Analysis of the architecture and design of the
-            same; Technologies used: C#,Mvc3,Jquery,JqueryUI,XML, ENTITY FRAMEWORK, LINQ
+        <details type="text"></details>
+        <summary type="text"></summary>
+        <content type="text">
         </content>
     </entry>
     <entry>
         <id type="text">11</id>
-        <title type="text">CONSULTANT</title>
+        <title type="text"></title>
         <link href="7" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text">KCS IT, Lisbon (Portugal)</details>
-        <summary type="text">PUBLICO Lisbon (Portugal)-06/2012 to 08/2012</summary>
-        <content type="text">Company: KCS IT Client: PUBLICO Lisbon (Portugal) Date: from 06/2012 to
-            08/2012 Project Scope: Creation of the new website newspaper O Publico www.publico.pt.
-            Function: Consultant Analyst/Programmer Project Contribution: ▪ Analysis and estimation
-            of tasks; ▪ Development of new features oriented services; ▪ Analysis and screening
-            problems in architectural. Technologies used: .WCF, SQL Server 2008, Mvc3
+        <details type="text"></details>
+        <summary type="text"></summary>
+        <content type="text">
         </content>
     </entry>
     <entry>
         <id type="text">12</id>
-        <title type="text">CONSULTANT</title>
+        <title type="text"></title>
         <link href="5" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text">KCS IT, Lisbon (Portugal)</details>
-        <summary type="text">ZON MULTIMEDIA Lisbon (Portugal)-05/2012</summary>
-        <content type="text">Company: KCS IT Client: ZON MULTIMEDIA Lisbon (Portugal) Date: 05/2012
-            Project Scope 1: Sureys of.IT solutions present in Zon Multimédia and make
-            suggestions.of.improements in terms of architecture. Approach to implementation teams
-            with analysis. Function: Consultant ▪ Lifting requisites ▪ Analysis and estimation of
-            tasks; ▪ Suggestion for improement and best pratices of software; ▪ Analysis and
-            screening detected problems. Technologies used: ASP.NET, .NET 4.5, C#, SOAP, WCF, SQL,
-            ENTITY FRAMEWORK, LINQ
+        <details type="text"></details>
+        <summary type="text"></summary>
+        <content type="text">
         </content>
     </entry>
     <entry>
         <id type="text">13</id>
-        <title type="text">CONSULTANT</title>
+        <title type="text"></title>
         <link href="11" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text">BTO- Besides The Obvious, Lisbon (Portugal)</details>
-        <summary type="text">BTO- Besides The Obvious(Samsung) Lisbon (Portugal)-2012</summary>
-        <content type="text">Company:BTO- Besides The Obvious Client: Samsung Lisbon (Portugal)
-            Date: 2012 Project Scope:Make the corporate web site to Samsung from Portugal Function:
-            Consultant ▪ Analysis and estimation of requisites; ▪ Create the web site and former the
-            team with the technologies used; ▪ Implement the SCRUM in the team. Technologies used:
-            ASP.NET, .NET 4.5, C#, SOAP, WCF, SQL, ENTITY FRAMEWORK, LINQ
+        <details type="text"></details>
+        <summary type="text"></summary>
+        <content type="text">
         </content>
     </entry>
     <entry>
         <id type="text">14</id>
-        <title type="text">SOFTWARE PROGRAMMER</title>
+        <title type="text"></title>
         <link href="9" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text">EXAGO SA, Lisbon (Portugal)</details>
-        <summary type="text">Company: :EXAGO SA Lisbon (Portugal)-08/2011 to 03/2012</summary>
-        <content type="text">Company: : EXAGO SA Client: EXAGO SA Lisbon (Portugal) Date: 08/2011 to
-            03/2012 Project Description 1: Development of a mobile application Exago Markets Mobile
-            (Mercados preditivos) in “html5” and “jquery mobile” , Css3. As well as hybrid
-            applications.for Windows phone 7.5 and android. Functions: Analyst,and Programmer ▪
-            Analysis and estimating tasks; ▪ Development of Framework mobile like Api Mobile to
-            Exago Markets Mobile; ▪ Analysis and screening problems in architectural. Technologies
-            Used: Asp.Net / C# Mvc3CSS, Javascript,Jquery and Jquery MobileHTML5 SilverLight
-            (Windows Phone )Java (Android)Microsoft SQL Server 2008CSS3
+        <details type="text"></details>
+        <summary type="text"></summary>
+        <content type="text">
         </content>
 
     </entry>
     <entry>
         <id type="text">15</id>
-        <title type="text">CONSULTANT</title>
+        <title type="text"></title>
         <link href="12" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text">Adidas Business SA, Maia (Portugal)</details>
+        <details type="text"></details>
         <summary type="text">
-            Adidas Business SA-06/2010 a 06/2011
+
         </summary>
         <content type="text">
-            Client: Adidas Business SA Date: 06/2010 a 06/2011 Project Description 1: Control
-            Application and payment processing management and document management Function: Analyst
-            and Programmer ▪ Surey and analysis.of requisites ▪ Business model design ▪ Database
-            criation and implementation of the application of document management ▪ Technologies
-            Used: Microsoft SQL Server 2005 and 2008,Microsoft Visual Studio 2010,Web
-            Services,Windows Forms,Asp.Net / C#
+
         </content>
     </entry>
     <entry>
         <id type="text">16</id>
-        <title type="text">CONSULTANT</title>
+        <title type="text"></title>
         <link href="12" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text">Adidas Business SA, Maia (Portugal)</details>
+        <details type="text"></details>
         <summary type="text">
-            Adidas Business SA-06/2010 a 06/2011
+
         </summary>
         <content type="text">
-            Client: Adidas Business SA Date: 06/2010 a 06/2011 Project Description 1: Control
-            Application and payment processing management and document management Function: Analyst
-            and Programmer ▪ Surey and analysis.of requisites ▪ Business model design ▪ Database
-            criation and implementation of the application of document management ▪ Technologies
-            Used: Microsoft SQL Server 2005 and 2008,Microsoft Visual Studio 2010,Web
-            Services,Windows Forms,Asp.Net / C#
+
         </content>
     </entry>
     <entry>
         <id type="text">17</id>
-        <title type="text">CONSULTANT</title>
+        <title type="text"></title>
         <link href="12" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text">Adidas Business SA, Maia (Portugal)</details>
+        <details type="text"></details>
         <summary type="text">
-            Adidas Business SA-06/2010 a 06/2011
+
         </summary>
         <content type="text">
-            Client: Adidas Business SA Date: 06/2010 a 06/2011 Project Description 1: Control
-            Application and payment processing management and document management Function: Analyst
-            and Programmer ▪ Surey and analysis.of requisites ▪ Business model design ▪ Database
-            criation and implementation of the application of document management ▪ Technologies
-            Used: Microsoft SQL Server 2005 and 2008,Microsoft Visual Studio 2010,Web
-            Services,Windows Forms,Asp.Net / C#
+
         </content>
     </entry>
     <entry>
         <id type="text">18</id>
-        <title type="text">CONSULTANT</title>
+        <title type="text"></title>
         <link href="12" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text">Adidas Business SA, Maia (Portugal)</details>
+        <details type="text"></details>
         <summary type="text">
-            Adidas Business SA-06/2010 a 06/2011
+
         </summary>
         <content type="text">
-            Client: Adidas Business SA Date: 06/2010 a 06/2011 Project Description 1: Control
-            Application and payment processing management and document management Function: Analyst
-            and Programmer ▪ Surey and analysis.of requisites ▪ Business model design ▪ Database
-            criation and implementation of the application of document management ▪ Technologies
-            Used: Microsoft SQL Server 2005 and 2008,Microsoft Visual Studio 2010,Web
-            Services,Windows Forms,Asp.Net / C#
+
         </content>
     </entry>
     <entry>
         <id type="text">19</id>
-        <title type="text">CONSULTANT</title>
+        <title type="text"></title>
         <link href="12" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text">Adidas Business SA, Maia (Portugal)</details>
+        <details type="text"></details>
         <summary type="text">
-            Adidas Business SA-06/2010 a 06/2011
+
         </summary>
         <content type="text">
-            Client: Adidas Business SA Date: 06/2010 a 06/2011 Project Description 1: Control
-            Application and payment processing management and document management Function: Analyst
-            and Programmer ▪ Surey and analysis.of requisites ▪ Business model design ▪ Database
-            criation and implementation of the application of document management ▪ Technologies
-            Used: Microsoft SQL Server 2005 and 2008,Microsoft Visual Studio 2010,Web
-            Services,Windows Forms,Asp.Net / C#
+
         </content>
     </entry>
     <entry>
         <id type="text">20</id>
-        <title type="text">CONSULTANT</title>
+        <title type="text"></title>
         <link href="12" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text">Adidas Business SA, Maia (Portugal)</details>
+        <details type="text"></details>
         <summary type="text">
-            Adidas Business SA-06/2010 a 06/2011
+
         </summary>
         <content type="text">
             Client: Adidas Business SA Date: 06/2010 a 06/2011 Project Description 1: Control
@@ -368,74 +259,54 @@
     </entry>
     <entry>
         <id type="text">21</id>
-        <title type="text">CONSULTANT</title>
+        <title type="text"></title>
         <link href="12" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text">Adidas Business SA, Maia (Portugal)</details>
+        <details type="text"></details>
         <summary type="text">
-            Adidas Business SA-06/2010 a 06/2011
+
         </summary>
         <content type="text">
-            Client: Adidas Business SA Date: 06/2010 a 06/2011 Project Description 1: Control
-            Application and payment processing management and document management Function: Analyst
-            and Programmer ▪ Surey and analysis.of requisites ▪ Business model design ▪ Database
-            criation and implementation of the application of document management ▪ Technologies
-            Used: Microsoft SQL Server 2005 and 2008,Microsoft Visual Studio 2010,Web
-            Services,Windows Forms,Asp.Net / C#
+
         </content>
     </entry>
     <entry>
         <id type="text">22</id>
-        <title type="text">CONSULTANT</title>
+        <title type="text"></title>
         <link href="12" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text">Adidas Business SA, Maia (Portugal)</details>
+        <details type="text"></details>
         <summary type="text">
-            Adidas Business SA-06/2010 a 06/2011
+
         </summary>
         <content type="text">
-            Client: Adidas Business SA Date: 06/2010 a 06/2011 Project Description 1: Control
-            Application and payment processing management and document management Function: Analyst
-            and Programmer ▪ Surey and analysis.of requisites ▪ Business model design ▪ Database
-            criation and implementation of the application of document management ▪ Technologies
-            Used: Microsoft SQL Server 2005 and 2008,Microsoft Visual Studio 2010,Web
-            Services,Windows Forms,Asp.Net / C#
+
         </content>
     </entry>
     <entry>
         <id type="text">23</id>
-        <title type="text">CONSULTANT</title>
+        <title type="text">Hibernate</title>
         <link href="12" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text">Adidas Business SA, Maia (Portugal)</details>
+        <details type="text"></details>
         <summary type="text">
-            Adidas Business SA-06/2010 a 06/2011
+
         </summary>
         <content type="text">
-            Client: Adidas Business SA Date: 06/2010 a 06/2011 Project Description 1: Control
-            Application and payment processing management and document management Function: Analyst
-            and Programmer ▪ Surey and analysis.of requisites ▪ Business model design ▪ Database
-            criation and implementation of the application of document management ▪ Technologies
-            Used: Microsoft SQL Server 2005 and 2008,Microsoft Visual Studio 2010,Web
-            Services,Windows Forms,Asp.Net / C#
+
         </content>
     </entry>
     <entry>
         <id type="text">24</id>
-        <title type="text">CONSULTANT</title>
+        <title type="text"></title>
         <link href="12" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text">Adidas Business SA, Maia (Portugal)</details>
+        <details type="text"></details>
         <summary type="text">
-            Adidas Business SA-06/2010 a 06/2011
+
         </summary>
         <content type="text">
-            Client: Adidas Business SA Date: 06/2010 a 06/2011 Project Description 1: Control
-            Application and payment processing management and document management Function: Analyst
-            and Programmer ▪ Surey and analysis.of requisites ▪ Business model design ▪ Database
-            criation and implementation of the application of document management ▪ Technologies
-            Used: Microsoft SQL Server 2005 and 2008,Microsoft Visual Studio 2010,Web
-            Services,Windows Forms,Asp.Net / C#
+
         </content>
     </entry>
 </resume>

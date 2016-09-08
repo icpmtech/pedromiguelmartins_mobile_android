@@ -14,24 +14,24 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
-import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.ProjectFragment.OnListFragmentInteractionListener;
-import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.project.ProjectContent;
+import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.ToolFragment.OnListFragmentInteractionListener;
+import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.tool.ToolContent;
 
 import java.util.List;
 
 /**
- * {@link RecyclerView.Adapter} that can display a {@link ProjectContent.ProjectItem} and makes a call to the
+ * {@link RecyclerView.Adapter} that can display a {@link ToolContent.ToolItem} and makes a call to the
  * specified {@link OnListFragmentInteractionListener}.
  * TODO: Replace the implementation with code for your data type.
  */
-public class MyProjectRecyclerViewAdapter extends RecyclerView.Adapter<MyProjectRecyclerViewAdapter.ViewHolder> {
+public class MyToolRecyclerViewAdapter extends RecyclerView.Adapter<MyToolRecyclerViewAdapter.ViewHolder> {
 
-    private final List<ProjectContent.ProjectItem> mValues;
+    private final List<ToolContent.ToolItem> mValues;
     private final OnListFragmentInteractionListener mListener;
     private Context mContext;
     private String listItemDetailsForPopupMenu;
 
-    public MyProjectRecyclerViewAdapter(Context mContext, List<ProjectContent.ProjectItem> items, OnListFragmentInteractionListener listener) {
+    public MyToolRecyclerViewAdapter(Context mContext, List<ToolContent.ToolItem> items, OnListFragmentInteractionListener listener) {
         mValues = items;
         this.mContext = mContext;
         mListener = listener;
@@ -40,7 +40,7 @@ public class MyProjectRecyclerViewAdapter extends RecyclerView.Adapter<MyProject
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.fragment_project, parent, false);
+                .inflate(R.layout.fragment_tool, parent, false);
         return new ViewHolder(view);
     }
 
@@ -60,11 +60,10 @@ public class MyProjectRecyclerViewAdapter extends RecyclerView.Adapter<MyProject
                     // fragment is attached to one) that an item has been selected.
 
 
-                    //  showPopupMenu(holder.overflow, mValues.get(position).content);
+                    // showPopupMenu(holder.overflow, mValues.get(position).content);
+
+
                     mListener.onListFragmentInteraction(holder.mItem);
-                    // Context context = v.getContext();
-                    // Intent intent = new Intent(context, ResumeDetailsActivity.class);
-                    // context.startActivity(intent);
                 }
             }
         });
@@ -111,6 +110,7 @@ public class MyProjectRecyclerViewAdapter extends RecyclerView.Adapter<MyProject
             switch (item.getItemId()) {
                 case R.id.action_details:
                     Toast.makeText(mContext, listItemDetailsForPopupMenu, Toast.LENGTH_LONG).show();
+
                     return true;
 
                 default:
@@ -126,7 +126,7 @@ public class MyProjectRecyclerViewAdapter extends RecyclerView.Adapter<MyProject
         public final TextView mContentView;
         public final TextView mSummaryView;
         public final ImageView thumbnail, overflow;
-        public ProjectContent.ProjectItem mItem;
+        public ToolContent.ToolItem mItem;
 
         public ViewHolder(View view) {
             super(view);

@@ -8,9 +8,7 @@ import android.content.res.AssetManager;
 import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.internal.view.SupportMenuItem;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.MenuItemCompat;
@@ -22,7 +20,6 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
@@ -31,6 +28,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.project.ProjectContent;
 import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.resume.ResumeContent;
 import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.technology.TechnologyContent;
+import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.tool.ToolContent;
 import net.sf.andpdf.pdfviewer.PdfViewerActivity;
 
 import java.io.File;
@@ -46,7 +44,7 @@ public class MainHomeActivity extends AppCompatActivity
         ResumeFragment.OnListFragmentInteractionListener,
         AboutMeFragment.OnFragmentInteractionListener,
         TechnologyFragment.OnListFragmentInteractionListener,
-        ProjectFragment.OnListFragmentInteractionListener {
+        ProjectFragment.OnListFragmentInteractionListener, ToolFragment.OnListFragmentInteractionListener {
 
     Toolbar toolbar;
     /**
@@ -70,14 +68,7 @@ public class MainHomeActivity extends AppCompatActivity
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
 
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         toggle = new ActionBarDrawerToggle(
@@ -225,9 +216,9 @@ public class MainHomeActivity extends AppCompatActivity
         } else if (id == R.id.nav_about_me) {
             fragment = new AboutMeFragment();
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_tool) {
 
-
+            fragment = new ToolFragment();
         } else if (id == R.id.nav_resume) {
 
             fragment = new ResumeFragment();
@@ -253,6 +244,9 @@ public class MainHomeActivity extends AppCompatActivity
 
     @Override
     public void onListFragmentInteraction(ResumeContent.ResumeItem item) {
+        Intent intent = new Intent(this.getBaseContext(), DetailResumeDetailActivity.class);
+        intent.putExtra("item_id", item.id);
+        startActivity(intent);
 
     }
 
@@ -304,7 +298,9 @@ public class MainHomeActivity extends AppCompatActivity
 
     @Override
     public void onListFragmentInteraction(ProjectContent.ProjectItem item) {
-
+        Intent intent = new Intent(this.getBaseContext(), ProjectDetailDetailActivity.class);
+        intent.putExtra("item_id", item.id);
+        startActivity(intent);
     }
 
     @Override
@@ -323,6 +319,14 @@ public class MainHomeActivity extends AppCompatActivity
 
     @Override
     public void onListFragmentInteraction(TechnologyContent.TechnologyItem item) {
+
+        Intent intent = new Intent(this.getBaseContext(), DetailTecnologyDetailActivity.class);
+        intent.putExtra("item_id", item.id);
+        startActivity(intent);
+    }
+
+    @Override
+    public void onListFragmentInteraction(ToolContent.ToolItem item) {
 
     }
 }
