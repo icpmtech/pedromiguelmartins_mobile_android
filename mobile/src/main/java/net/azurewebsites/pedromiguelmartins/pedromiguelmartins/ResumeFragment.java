@@ -42,7 +42,6 @@ public class ResumeFragment extends Fragment {
     public ResumeFragment() {
     }
 
-    // TODO: Customize parameter initialization
     @SuppressWarnings("unused")
     public static ResumeFragment newInstance(int columnCount) {
         ResumeFragment fragment = new ResumeFragment();
