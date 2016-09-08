@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resume>
+    <entry>
+        <id type="text">0</id>
+        <title type="text">Asp.net</title>
+        <link href="0" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text">Learn About ASP.NET MVC</details>
+        <summary type="text">
+            ASP.NET MVC
+        </summary>
+        <content type="text">
+            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and that gives you full control over markup for
+            enjoyable, agile development. ASP.NET MVC includes many features that enable fast,
+            TDD-friendly development for creating sophisticated applications that use the latest web
+            standards.
+        </content>
+    </entry>
+    <entry>
+        <id type="text">1</id>
+        <title type="text">AngularJS</title>
+        <link href="1" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text"></details>
+        <summary type="text">
+
+        </summary>
+        <content type="text">
+
+        </content>
+    </entry>
+    <entry>
+        <id type="text">2</id>
+        <title type="text">HTML/CSS/JAVASCRIPT</title>
+        <link href="2" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text"></details>
+        <summary type="text">
+
+        </summary>
+        <content type="text">
+
+        </content>
+    </entry>
+    <entry>
+        <id type="text">3</id>
+        <title type="text">Spring Framework</title>
+        <link href="3" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text"></details>
+        <summary type="text">
+
+        </summary>
+        <content type="text">
+
+        </content>
+    </entry>
+    <entry>
+        <id type="text">4</id>
+        <title type="text">JAVA EE</title>
+        <link href="4" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text"></details>
+        <summary type="text">
+
+        </summary>
+        <content type="text">
+
+        </content>
+    </entry>
+    <entry>
+        <id type="text">5</id>
+        <title type="text">.net</title>
+        <link href="4" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text"></details>
+        <summary type="text">
+
+        </summary>
+        <content type="text">
+
+        </content>
+    </entry>
+    <entry>
+        <id type="text">6</id>
+        <title type="text"></title>
+        <link href="14" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text"></details>
+        <summary type="text"></summary>
+        <content type="text">
+        </content>
+    </entry>
+    <entry>
+        <id type="text">7</id>
+        <title type="text"></title>
+        <link href="13" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text"></details>
+        <summary type="text"></summary>
+        <summary type="text">
+        </summary>
+    </entry>
+    <entry>
+        <id type="text">8</id>
+        <title type="text"></title>
+        <link href="10" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text"></details>
+        <summary type="text"></summary>
+        <content type="text">
+        </content>
+    </entry>
+    <entry>
+        <id type="text">9</id>
+        <title type="text"></title>
+        <link href="6" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text"></details>
+        <summary type="text">
+        </summary>
+        <content type="text">
+        </content>
+    </entry>
+    <entry>
+        <id type="text">10</id>
+        <title type="text"></title>
+        <link href="5" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text"></details>
+        <summary type="text"></summary>
+        <content type="text">
+        </content>
+    </entry>
+    <entry>
+        <id type="text">11</id>
+        <title type="text"></title>
+        <link href="7" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text"></details>
+        <summary type="text"></summary>
+        <content type="text">
+        </content>
+    </entry>
+    <entry>
+        <id type="text">12</id>
+        <title type="text"></title>
+        <link href="5" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text"></details>
+        <summary type="text"></summary>
+        <content type="text">
+        </content>
+    </entry>
+    <entry>
+        <id type="text">13</id>
+        <title type="text"></title>
+        <link href="11" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text"></details>
+        <summary type="text"></summary>
+        <content type="text">
+        </content>
+    </entry>
+    <entry>
+        <id type="text">14</id>
+        <title type="text"></title>
+        <link href="9" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text"></details>
+        <summary type="text"></summary>
+        <content type="text">
+        </content>
+
+    </entry>
+    <entry>
+        <id type="text">15</id>
+        <title type="text"></title>
+        <link href="12" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text"></details>
+        <summary type="text">
+
+        </summary>
+        <content type="text">
+
+        </content>
+    </entry>
+    <entry>
+        <id type="text">16</id>
+        <title type="text"></title>
+        <link href="12" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text"></details>
+        <summary type="text">
+
+        </summary>
+        <content type="text">
+
+        </content>
+    </entry>
+    <entry>
+        <id type="text">17</id>
+        <title type="text"></title>
+        <link href="12" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text"></details>
+        <summary type="text">
+
+        </summary>
+        <content type="text">
+
+        </content>
+    </entry>
+    <entry>
+        <id type="text">18</id>
+        <title type="text"></title>
+        <link href="12" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text"></details>
+        <summary type="text">
+
+        </summary>
+        <content type="text">
+
+        </content>
+    </entry>
+    <entry>
+        <id type="text">19</id>
+        <title type="text"></title>
+        <link href="12" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text"></details>
+        <summary type="text">
+
+        </summary>
+        <content type="text">
+
+        </content>
+    </entry>
+    <entry>
+        <id type="text">20</id>
+        <title type="text"></title>
+        <link href="12" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text"></details>
+        <summary type="text">
+
+        </summary>
+        <content type="text">
+            Client: Adidas Business SA Date: 06/2010 a 06/2011 Project Description 1: Control
+            Application and payment processing management and document management Function: Analyst
+            and Programmer ▪ Surey and analysis.of requisites ▪ Business model design ▪ Database
+            criation and implementation of the application of document management ▪ Technologies
+            Used: Microsoft SQL Server 2005 and 2008,Microsoft Visual Studio 2010,Web
+            Services,Windows Forms,Asp.Net / C#
+        </content>
+    </entry>
+    <entry>
+        <id type="text">21</id>
+        <title type="text"></title>
+        <link href="12" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text"></details>
+        <summary type="text">
+
+        </summary>
+        <content type="text">
+
+        </content>
+    </entry>
+    <entry>
+        <id type="text">22</id>
+        <title type="text"></title>
+        <link href="12" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text"></details>
+        <summary type="text">
+
+        </summary>
+        <content type="text">
+
+        </content>
+    </entry>
+    <entry>
+        <id type="text">23</id>
+        <title type="text">Hibernate</title>
+        <link href="12" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text"></details>
+        <summary type="text">
+
+        </summary>
+        <content type="text">
+
+        </content>
+    </entry>
+    <entry>
+        <id type="text">24</id>
+        <title type="text"></title>
+        <link href="12" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text"></details>
+        <summary type="text">
+
+        </summary>
+        <content type="text">
+
+        </content>
+    </entry>
+    <entry>
+        <id type="text">25</id>
+        <title type="text"></title>
+        <link href="12" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text"></details>
+        <summary type="text">
+
+        </summary>
+        <content type="text">
+
+        </content>
+    </entry>
+    <entry>
+        <id type="text">26</id>
+        <title type="text"></title>
+        <link href="12" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text"></details>
+        <summary type="text">
+
+        </summary>
+        <content type="text">
+
+        </content>
+    </entry>
+</resume>

@@ -104,6 +104,43 @@ public  class  Utils {
      * @return
      */
     @org.jetbrains.annotations.Contract(" -> !null")
+    public static Integer[] GetToolsListImages()
+    {
+        return  new Integer  [] {
+                drawable.ic_asp_net,
+                drawable.ic_angularjs,
+                drawable.ic_html_css_javascript,
+                drawable.ic_spring,
+                drawable.ic_javaee,
+                drawable.ic_net,
+                drawable.ic_android,
+                drawable.ic_windows_phone,
+                drawable.ic_windows_store,
+                drawable.ic_visualstudio,
+                drawable.ic_androidstudio,
+                drawable.ic_bootstrap,
+                drawable.ic_bootstrapui,
+                drawable.ic_jquery,
+                drawable.ic_jquerymobile,
+                drawable.ic_azure,
+                drawable.ic_jenkins,
+                drawable.ic_cordoba,
+                drawable.ic_wcf,
+                drawable.ic_git,
+                drawable.ic_grunt,
+                drawable.ic_json,
+                drawable.ic_bower,
+                drawable.ic_hibernate,
+                drawable.ic_entity,
+                drawable.logo_github,
+                drawable.logo_tfs
+
+        };
+    }
+    /**
+     * @return
+     */
+    @org.jetbrains.annotations.Contract(" -> !null")
     public static Integer[] GetTechnologiesListImages()
     {
         return  new Integer  [] {
@@ -143,7 +180,13 @@ public  class  Utils {
     public static Integer[] GetContactsListImages()
     {
         return  new Integer  [] {
-                android.R.drawable.ic_dialog_email,
+                drawable.ic_gmail,
+                drawable.ic_hotmail,
+                drawable.ic_github,
+                drawable.ic_linkedin,
+                drawable.ic_facebook,
+
+
 
 
 

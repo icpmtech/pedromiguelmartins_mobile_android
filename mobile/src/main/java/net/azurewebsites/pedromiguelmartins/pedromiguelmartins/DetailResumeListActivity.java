@@ -16,7 +16,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.dummy.DummyContent;
+import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.contact.ContactContent;
 
 import java.util.List;
 
@@ -92,15 +92,15 @@ public class DetailResumeListActivity extends AppCompatActivity {
     }
 
     private void setupRecyclerView(@NonNull RecyclerView recyclerView) {
-        recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(DummyContent.ITEMS));
+        recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(ContactContent.ITEMS));
     }
 
     public class SimpleItemRecyclerViewAdapter
             extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.ViewHolder> {
 
-        private final List<DummyContent.DummyItem> mValues;
+        private final List<ContactContent.ContactItem> mValues;
 
-        public SimpleItemRecyclerViewAdapter(List<DummyContent.DummyItem> items) {
+        public SimpleItemRecyclerViewAdapter(List<ContactContent.ContactItem> items) {
             mValues = items;
         }
 
@@ -148,7 +148,7 @@ public class DetailResumeListActivity extends AppCompatActivity {
             public final View mView;
             public final TextView mIdView;
             public final TextView mContentView;
-            public DummyContent.DummyItem mItem;
+            public ContactContent.ContactItem mItem;
 
             public ViewHolder(View view) {
                 super(view);

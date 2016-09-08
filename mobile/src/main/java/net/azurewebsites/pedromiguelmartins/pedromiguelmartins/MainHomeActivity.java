@@ -25,6 +25,7 @@ import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
+import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.contact.ContactContent;
 import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.project.ProjectContent;
 import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.resume.ResumeContent;
 import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.technology.TechnologyContent;
@@ -44,7 +45,9 @@ public class MainHomeActivity extends AppCompatActivity
         ResumeFragment.OnListFragmentInteractionListener,
         AboutMeFragment.OnFragmentInteractionListener,
         TechnologyFragment.OnListFragmentInteractionListener,
-        ProjectFragment.OnListFragmentInteractionListener, ToolFragment.OnListFragmentInteractionListener {
+        ProjectFragment.OnListFragmentInteractionListener,
+        ToolFragment.OnListFragmentInteractionListener,
+        ContactFragment.OnListFragmentInteractionListener {
 
     Toolbar toolbar;
     /**
@@ -223,8 +226,8 @@ public class MainHomeActivity extends AppCompatActivity
 
             fragment = new ResumeFragment();
 
-        }  else if (id == R.id.nav_send) {
-
+        }  else if (id == R.id.nav_contact) {
+            fragment = new ContactFragment();
         }
         if (fragment != null) {
             FragmentManager fragmentManager = getFragmentManager();
@@ -327,6 +330,11 @@ public class MainHomeActivity extends AppCompatActivity
 
     @Override
     public void onListFragmentInteraction(ToolContent.ToolItem item) {
+
+    }
+
+    @Override
+    public void onListFragmentInteraction(ContactContent.ContactItem item) {
 
     }
 }

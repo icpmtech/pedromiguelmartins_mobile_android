@@ -87,7 +87,7 @@ public class ToolFragment extends Fragment {
             Integer value = Integer.parseInt(entry.id);
             if (value == null)
                 value = 14;
-            Integer res = Utils.GetTechnologiesListImages()[value];
+            Integer res = Utils.GetToolsListImages()[value];
             if (res == null)
                 res = 14;
             ITEMS.add(new ToolItem(entry.title, entry.content, entry.details, entry.summary, res, entry.id));
@@ -108,7 +108,7 @@ public class ToolFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_technology_list, container, false);
+        View view = inflater.inflate(R.layout.fragment_tool_list, container, false);
 
         // Set the adapter
         if (view instanceof RecyclerView) {
@@ -120,7 +120,7 @@ public class ToolFragment extends Fragment {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
             }
             try {
-                recyclerView.setAdapter(new MyToolRecyclerViewAdapter(context, loadXmlFromXML(getResources().getString(R.string.URL_TECHNOLOGY), context), mListener));
+                recyclerView.setAdapter(new MyToolRecyclerViewAdapter(context, loadXmlFromXML(getResources().getString(R.string.URL_TOOL), context), mListener));
                 return view;
             } catch (XmlPullParserException e) {
                 // e.printStackTrace();

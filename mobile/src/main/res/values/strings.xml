@@ -73,6 +73,7 @@
         <item>-1</item>
     </string-array>
 
+    <string name="URL_TOOL">tool/tool.xml</string>
     <string name="URL_TECHNOLOGY">technology/technology.xml</string>
     <string name="URL_RESUME">resume/resume.xml</string>
     <string name="URL_PROJECTS">project/project.xml</string>

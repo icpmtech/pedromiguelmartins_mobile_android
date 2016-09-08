@@ -111,7 +111,7 @@ public class DetailTecnologyDetailFragment extends Fragment {
             // Load the dummy content specified by the fragment
             // arguments. In a real-world scenario, use a Loader
             // to load content from a content provider.
-            // mItem = DummyContent.ITEM_MAP.get(getArguments().getString(ARG_ITEM_ID));
+            // mItem = ContactContent.ITEM_MAP.get(getArguments().getString(ARG_ITEM_ID));
             try {
                 mItem = loadXmlFromXML(getResources().getString(R.string.URL_TECHNOLOGY), getContext()).get(Integer.parseInt(getArguments().getString(ARG_ITEM_ID)));
             } catch (XmlPullParserException e) {
