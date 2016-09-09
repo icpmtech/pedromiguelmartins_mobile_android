@@ -40,7 +40,7 @@ public class DetailResumeDetailFragment extends Fragment {
     private final String PLUS_ONE_URL = "http://pedromiguelmartins.azurewebsites.net/#home";
     PlusOneButton mPlusOneButton;
     /**
-     * The dummy content this fragment is presenting.
+     * The article content this fragment is presenting.
      */
     private ResumeContent.ResumeItem mItem;
 
@@ -125,7 +125,7 @@ public class DetailResumeDetailFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.detailresume_detail, container, false);
 
-        // Show the dummy content as text in a TextView.
+        // Show the article content as text in a TextView.
         if (mItem != null) {
             ((TextView) rootView.findViewById(R.id.detailresume_detail)).setText(mItem.content);
         }

@@ -19,7 +19,7 @@ public class DetailTecnologyDetailActivity extends AppCompatActivity {
     // The request code must be 0 or greater.
     private static final int PLUS_ONE_REQUEST_CODE = 0;
     // The URL to +1.  Must be a valid URL.
-    private final String PLUS_ONE_URL = "http://pedromiguelmartins.azurewebsites.net/#home";
+    private String PLUS_ONE_URL = "http://pedromiguelmartins.azurewebsites.net/#skills";
     private PlusOneButton fab;
 
     @Override

@@ -40,6 +40,19 @@
         </content>
     </entry>
     <entry>
+        <id type="text">2</id>
+        <title type="text">GitHub Page</title>
+        <link href="2" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text">https://icpmtech.github.io/pedromiguelmartins_mobile_android/</details>
+        <summary type="text">
+
+        </summary>
+        <content type="text">
+
+        </content>
+    </entry>
+    <entry>
         <id type="text">3</id>
         <title type="text"></title>
         <link href="3" rel="alternate" />

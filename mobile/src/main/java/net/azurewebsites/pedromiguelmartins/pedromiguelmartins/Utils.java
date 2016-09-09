@@ -193,4 +193,18 @@ public  class  Utils {
         };
     }
 
+    public static Integer[] GetArticleListImages() {
+        return new Integer[]{
+                drawable.ic_article_portofolio,
+                drawable.ic_article_sistemas,
+                drawable.ic_article_innovation,
+                drawable.ic_article_coaching,
+                drawable.ic_article_think,
+                drawable.ic_article_tech,
+                drawable.ic_article_view,
+                drawable.ic_article_consulting,
+
+
+        };
+    }
 }

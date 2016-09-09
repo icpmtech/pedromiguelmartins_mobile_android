@@ -2,13 +2,12 @@ package net.azurewebsites.pedromiguelmartins.pedromiguelmartins;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.view.View;
+
+import com.google.android.gms.plus.PlusOneButton;
 
 /**
  * An activity representing a single ProjectDetail detail screen. This
@@ -17,6 +16,18 @@ import android.view.View;
  * in a {@link ProjectDetailListActivity}.
  */
 public class ProjectDetailDetailActivity extends AppCompatActivity {
+    // The request code must be 0 or greater.
+    private static final int PLUS_ONE_REQUEST_CODE = 0;
+    private final String PLUS_ONE_URL = "http://pedromiguelmartins.azurewebsites.net/#resume";
+    private PlusOneButton fab;
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        // Refresh the state of the +1 button each time the activity receives focus.
+        fab.initialize(PLUS_ONE_URL, PLUS_ONE_REQUEST_CODE);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,14 +36,9 @@ public class ProjectDetailDetailActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.detail_toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own detail action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
+        fab = (PlusOneButton) findViewById(R.id.fab);
+
 
         // Show the Up button in the action bar.
         ActionBar actionBar = getSupportActionBar();

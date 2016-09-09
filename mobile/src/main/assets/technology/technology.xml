@@ -3,11 +3,11 @@
     <entry>
         <id type="text">0</id>
         <title type="text">Asp.net</title>
-        <link href="0" rel="alternate" />
+        <link href="http://www.asp.net/" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text">Learn About ASP.NET MVC</details>
+        <details type="text">About ASP.NET MVC</details>
         <summary type="text">
-            ASP.NET MVC
+            Why Asp.net?
         </summary>
         <content type="text">
             ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
@@ -20,292 +20,714 @@
     <entry>
         <id type="text">1</id>
         <title type="text">AngularJS</title>
-        <link href="1" rel="alternate" />
+        <link href="https://angularjs.org/" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text"></details>
+        <details type="text">About AngularJS?</details>
         <summary type="text">
-
+            Why AngularJS?
         </summary>
         <content type="text">
+            Why AngularJS?
+            HTML is great for declaring static documents, but it falters when we try to use it for
+            declaring dynamic views in web-applications. AngularJS lets you extend HTML vocabulary
+            for your application. The resulting environment is extraordinarily expressive, readable,
+            and quick to develop.
+            Alternatives
+            Other frameworks deal with HTML’s shortcomings by either abstracting away HTML, CSS,
+            and/or JavaScript or by providing an imperative way for manipulating the DOM. Neither of
+            these address the root problem that HTML was not designed for dynamic views.
+            Extensibility
+            AngularJS is a toolset for building the framework most suited to your application
+            development. It is fully extensible and works well with other libraries. Every feature
+            can be modified or replaced to suit your unique development workflow and feature needs.
+            Read on to find out how.
 
         </content>
     </entry>
     <entry>
         <id type="text">2</id>
         <title type="text">HTML/CSS/JAVASCRIPT</title>
-        <link href="2" rel="alternate" />
+        <link href="https://www.w3.org/wiki/The_web_standards_model_-_HTML_CSS_and_JavaScript"
+            rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text"></details>
+        <details type="text">About HTML/CSS/JAVASCRIPT</details>
         <summary type="text">
-
+            Why HTML CSS and JavaScript?
         </summary>
         <content type="text">
-
+            Introduction
+            Continuing with Web Standards Curriculum, the basic building blocks of the Web — HTML,
+            CSS and JavaScript have been introduced. Now it’s time to dig a little deeper and to
+            look at each of these — what they do, and how the three interact with each other to
+            create a web site.
+            Why separate?
+            That’s usually the first question that gets asked about web standards. You can
+            accomplish content, styling and layout just using HTML — font elements for style and
+            HTML tables for layout, so why should we bother with this XHTML/CSS stuff? Tables for
+            layout, etc. is how it used to be done in the bad old days of web design, and many
+            people still do it like this (although you really shouldn’t), which is one of the
+            reasons why we created this course in the first place. We won’t be covering such methods
+            in this course. Here are the most compelling reasons for using CSS and HTML over
+            outdated methods:
+            Efficiency of code: The larger your files are, the longer they will take to download,
+            and the more they will cost some people to view (some people still pay for downloads by
+            the megabyte.) You therefore don’t want to waste your bandwidth on large pages cluttered
+            up with styling and layout information in every HTML file. A much better alternative is
+            to make the HTML files stripped down and neat, and include the styling and layout
+            information just once in a separate CSS file. To see an actual case of this in action,
+            check out the A List Apart Slashdot rewrite article where the author took a very popular
+            web site and re-wrote it in XHTML/CSS.
+            Ease of maintenance: Following on from the last point, if your styling and layout
+            information is only specified in one place, it means you only have to make updates in
+            one place if you want to change your site’s appearance. Would you prefer to update this
+            information on every page of your site? I didn’t think so.
+            Accessibility: Web users who are visually impaired can use a piece of software known as
+            a “screen reader” to access the information through sound rather than sight — it
+            literally reads the page out to them, and it can do a much better job of helping people
+            to find their way around your web page if it has a proper semantic structure, such as
+            headings and paragraphs. In addition keyboard controls on web pages (important for those
+            with mobility impairments that can't use a mouse) work much better if they are built
+            using best practices. As a final example, screen readers can’t access text locked away
+            in images, and find some uses of JavaScript confusing. Make sure that your critical
+            content is available to everyone.
+            Device compatibility: Because your HTML/XHTML page is just plain markup, with no style
+            information, it can be reformatted for different devices with vastly differing
+            attributes (eg screen size) by simply applying an alternative style sheet — you can do
+            this in a few different ways (look at the [mobile articles on dev.opera.com] for
+            resources on this). CSS also natively allows you to specify different style sheets for
+            different presentation methods/media types (eg viewing on the screen, printing out,
+            viewing on a mobile device.)
+            Web crawlers/search engines: Chances are you will want your pages to be easy to find by
+            searching on Google, or other search engines. A search engine uses a “crawler”, which is
+            a specialized piece of software, to read through your pages. If that crawler has trouble
+            finding the content of your pages, or mis-interprets what’s important because you
+            haven’t defined headings as headings and so on, then your rankings in relevant search
+            results will probably suffer.
+            It’s just good practice: This is a bit of a “because I said so” reason, but talk to any
+            professional standards-aware web developer or designer, and they’ll tell you that
+            separating content, style, and behaviour is the best way to develop a web application.
         </content>
     </entry>
     <entry>
         <id type="text">3</id>
         <title type="text">Spring Framework</title>
-        <link href="3" rel="alternate" />
+        <link href="https://projects.spring.io/spring-framework/" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text"></details>
+        <details type="text">About Spring Framework</details>
         <summary type="text">
-
+            Why Spring Framework?
         </summary>
         <content type="text">
-
+            Introduction
+            The Spring Framework provides a comprehensive programming and configuration model for
+            modern Java-based enterprise applications - on any kind of deployment platform. A key
+            element of Spring is infrastructural support at the application level: Spring focuses on
+            the "plumbing" of enterprise applications so that teams can focus on application-level
+            business logic, without unnecessary ties to specific deployment environments.
+            Features
+            Dependency Injection
+            Aspect-Oriented Programming including Spring's declarative transaction management
+            Spring MVC web application and RESTful web service framework
+            Foundational support for JDBC, JPA, JMS
+            Much more…
+            All avaible features and modules are described in the Modules section of the reference
+            documentation. Their maven/gradle coordinates are also described there.
+            Minimum requirements
+            JDK 6+ for Spring Framework 4.x
+            JDK 5+ for Spring Framework 3.x
         </content>
     </entry>
     <entry>
         <id type="text">4</id>
         <title type="text">JAVA EE</title>
-        <link href="4" rel="alternate" />
+        <link href="http://www.oracle.com/technetwork/java/javaee/overview/index.html"
+            rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text"></details>
+        <details type="text">About JAVA EE</details>
         <summary type="text">
-
+            Why JAVA EE?
         </summary>
         <content type="text">
-
+            Java EE at a Glance
+            Java Platform, Enterprise Edition (Java EE) is the standard in community-driven
+            enterprise software. Java EE is developed using the Java Community Process, with
+            contributions from industry experts, commercial and open source organizations, Java User
+            Groups, and countless individuals. Each release integrates new features that align with
+            industry needs, improves application portability, and increases developer productivity.
+            Today, Java EE offers a rich enterprise software platform and with over 20 compliant
+            Java EE implementations to choose from, low risk and plenty of options.
         </content>
     </entry>
     <entry>
         <id type="text">5</id>
-        <title type="text">.net</title>
-        <link href="4" rel="alternate" />
+        <title type="text">.Net</title>
+        <link href="https://www.microsoft.com/net" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text"></details>
+        <details type="text">About .Net</details>
         <summary type="text">
-
+            Why .Net?
         </summary>
         <content type="text">
-
+            Any Developer, any App, any Platform
+            Windows development
+            The .NET Framework helps you create mobile, desktop, and web applications that run on
+            Windows PCs, devices and servers and it's included in Visual Studio.
+            Visual Studio 2015
+            Download .NET Framework only
+            Cross-platform server apps
+            .NET Core and ASP.NET Core give you a blazing fast and modular platform for creating
+            server applications that run on Windows, Linux and Mac.
+            .NET Core 1.0
+            Mobile apps on any device
+            Xamarin brings the power and productivity of .NET to iOS and Android, reusing skills and
+            code while getting access to the native APIs and performance.
         </content>
     </entry>
     <entry>
         <id type="text">6</id>
-        <title type="text"></title>
-        <link href="14" rel="alternate" />
+        <title type="text">Android</title>
+        <link href="https://developer.android.com/guide/components/fundamentals.html"
+            rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text"></details>
-        <summary type="text"></summary>
+        <details type="text">About Android</details>
+        <summary type="text">Why Android?</summary>
         <content type="text">
+            Application Fundamentals
+            Android apps are written in the Java programming language. The Android SDK tools compile
+            your code—along with any data and resource files—into an APK: an Android package, which
+            is an archive file with an .apk suffix.
+            One APK file contains all the contents of an Android app and is the file that
+            Android-powered devices use to install the app.
+            Once installed on a device, each Android app lives in its own security sandbox:
+            The Android operating system is a multi-user Linux system in which each app is a
+            different user.
+            By default, the system assigns each app a unique Linux user ID (the ID is used only by
+            the system and is unknown to the app). The system sets permissions for all the files in
+            an app so that only the user ID assigned to that app can access them.
+            Each process has its own virtual machine (VM), so an app's code runs in isolation from
+            other apps.
+            By default, every app runs in its own Linux process. Android starts the process when any
+            of the app's components need to be executed, then shuts down the process when it's no
+            longer needed or when the system must recover memory for other apps.
+            In this way, the Android system implements the principle of least privilege. That is,
+            each app, by default, has access only to the components that it requires to do its work
+            and no more. This creates a very secure environment in which an app cannot access parts
+            of the system for which it is not given permission.
+            However, there are ways for an app to share data with other apps and for an app to
+            access system services:
+
+            It's possible to arrange for two apps to share the same Linux user ID, in which case
+            they are able to access each other's files. To conserve system resources, apps with the
+            same user ID can also arrange to run in the same Linux process and share the same VM
+            (the apps must also be signed with the same certificate).
+            An app can request permission to access device data such as the user's contacts, SMS
+            messages, the mountable storage (SD card), camera, Bluetooth, and more. The user has to
+            explicitly grant these permissions. For more information, see Working with System
+            Permissions.
+            That covers the basics regarding how an Android app exists within the system. The rest
+            of this document introduces you to:
+
+            The core framework components that define your app.
+            The manifest file in which you declare components and required device features for your
+            app.
+            Resources that are separate from the app code and allow your app to gracefully optimize
+            its behavior for a variety of device configurations.
+            App Components
+            App components are the essential building blocks of an Android app. Each component is a
+            different point through which the system can enter your app. Not all components are
+            actual entry points for the user and some depend on each other, but each one exists as
+            its own entity and plays a specific role—each one is a unique building block that helps
+            define your app's overall behavior.
+
+            There are four different types of app components. Each type serves a distinct purpose
+            and has a distinct lifecycle that defines how the component is created and destroyed.
+
+            Here are the four types of app components:
+
+            Activities
+            An activity represents a single screen with a user interface. For example, an email app
+            might have one activity that shows a list of new emails, another activity to compose an
+            email, and another activity for reading emails. Although the activities work together to
+            form a cohesive user experience in the email app, each one is independent of the others.
+            As such, a different app can start any one of these activities (if the email app allows
+            it). For example, a camera app can start the activity in the email app that composes new
+            mail, in order for the user to share a picture.
+            An activity is implemented as a subclass of Activity and you can learn more about it in
+            the Activities developer guide.
+
+            Services
+            A service is a component that runs in the background to perform long-running operations
+            or to perform work for remote processes. A service does not provide a user interface.
+            For example, a service might play music in the background while the user is in a
+            different app, or it might fetch data over the network without blocking user interaction
+            with an activity. Another component, such as an activity, can start the service and let
+            it run or bind to it in order to interact with it.
+            A service is implemented as a subclass of Service and you can learn more about it in the
+            Services developer guide.
+
+            Content providers
+            A content provider manages a shared set of app data. You can store the data in the file
+            system, an SQLite database, on the web, or any other persistent storage location your
+            app can access. Through the content provider, other apps can query or even modify the
+            data (if the content provider allows it). For example, the Android system provides a
+            content provider that manages the user's contact information. As such, any app with the
+            proper permissions can query part of the content provider (such as
+            ContactsContract.Data) to read and write information about a particular person.
+            Content providers are also useful for reading and writing data that is private to your
+            app and not shared. For example, the Note Pad sample app uses a content provider to save
+            notes.
+
+            A content provider is implemented as a subclass of ContentProvider and must implement a
+            standard set of APIs that enable other apps to perform transactions. For more
+            information, see the Content Providers developer guide.
+
+            Broadcast receivers
+            A broadcast receiver is a component that responds to system-wide broadcast
+            announcements. Many broadcasts originate from the system—for example, a broadcast
+            announcing that the screen has turned off, the battery is low, or a picture was
+            captured. Apps can also initiate broadcasts—for example, to let other apps know that
+            some data has been downloaded to the device and is available for them to use. Although
+            broadcast receivers don't display a user interface, they may create a status bar
+            notification to alert the user when a broadcast event occurs. More commonly, though, a
+            broadcast receiver is just a "gateway" to other components and is intended to do a very
+            minimal amount of work. For instance, it might initiate a service to perform some work
+            based on the event.
+            A broadcast receiver is implemented as a subclass of BroadcastReceiver and each
+            broadcast is delivered as an Intent object. For more information, see the
+            BroadcastReceiver class.
+
+            A unique aspect of the Android system design is that any app can start another app’s
+            component. For example, if you want the user to capture a photo with the device camera,
+            there's probably another app that does that and your app can use it, instead of
+            developing an activity to capture a photo yourself. You don't need to incorporate or
+            even link to the code from the camera app. Instead, you can simply start the activity in
+            the camera app that captures a photo. When complete, the photo is even returned to your
+            app so you can use it. To the user, it seems as if the camera is actually a part of your
+            app.
+
+            When the system starts a component, it starts the process for that app (if it's not
+            already running) and instantiates the classes needed for the component. For example, if
+            your app starts the activity in the camera app that captures a photo, that activity runs
+            in the process that belongs to the camera app, not in your app's process. Therefore,
+            unlike apps on most other systems, Android apps don't have a single entry point (there's
+            no main() function, for example).
+
+            Because the system runs each app in a separate process with file permissions that
+            restrict access to other apps, your app cannot directly activate a component from
+            another app. The Android system, however, can. So, to activate a component in another
+            app, you must deliver a message to the system that specifies your intent to start a
+            particular component. The system then activates the component for you.
+
+            Activating Components
+            Three of the four component types—activities, services, and broadcast receivers—are
+            activated by an asynchronous message called an intent. Intents bind individual
+            components to each other at runtime (you can think of them as the messengers that
+            request an action from other components), whether the component belongs to your app or
+            another.
+
+            An intent is created with an Intent object, which defines a message to activate either a
+            specific component or a specific type of component—an intent can be either explicit or
+            implicit, respectively.
+
+            For activities and services, an intent defines the action to perform (for example, to
+            "view" or "send" something) and may specify the URI of the data to act on (among other
+            things that the component being started might need to know). For example, an intent
+            might convey a request for an activity to show an image or to open a web page. In some
+            cases, you can start an activity to receive a result, in which case, the activity also
+            returns the result in an Intent (for example, you can issue an intent to let the user
+            pick a personal contact and have it returned to you—the return intent includes a URI
+            pointing to the chosen contact).
+
+            For broadcast receivers, the intent simply defines the announcement being broadcast (for
+            example, a broadcast to indicate the device battery is low includes only a known action
+            string that indicates "battery is low").
+
+            The other component type, content provider, is not activated by intents. Rather, it is
+            activated when targeted by a request from a ContentResolver. The content resolver
+            handles all direct transactions with the content provider so that the component that's
+            performing transactions with the provider doesn't need to and instead calls methods on
+            the ContentResolver object. This leaves a layer of abstraction between the content
+            provider and the component requesting information (for security).
+
+            There are separate methods for activating each type of component:
+
+            You can start an activity (or give it something new to do) by passing an Intent to
+            startActivity() or startActivityForResult() (when you want the activity to return a
+            result).
+            You can start a service (or give new instructions to an ongoing service) by passing an
+            Intent to startService(). Or you can bind to the service by passing an Intent to
+            bindService().
+            You can initiate a broadcast by passing an Intent to methods like sendBroadcast(),
+            sendOrderedBroadcast(), or sendStickyBroadcast().
+            You can perform a query to a content provider by calling query() on a ContentResolver.
+            For more information about using intents, see the Intents and Intent Filters document.
+            More information about activating specific components is also provided in the following
+            documents: Activities, Services, BroadcastReceiver and Content Providers.
+
+            The Manifest File
+            Before the Android system can start an app component, the system must know that the
+            component exists by reading the app's AndroidManifest.xml file (the "manifest" file).
+            Your app must declare all its components in this file, which must be at the root of the
+            app project directory.
+
+            The manifest does a number of things in addition to declaring the app's components, such
+            as:
+
+            Identify any user permissions the app requires, such as Internet access or read-access
+            to the user's contacts.
+            Declare the minimum API Level required by the app, based on which APIs the app uses.
+            Declare hardware and software features used or required by the app, such as a camera,
+            bluetooth services, or a multitouch screen.
+            API libraries the app needs to be linked against (other than the Android framework
+            APIs), such as the Google Maps library.
+            And more...
         </content>
     </entry>
     <entry>
         <id type="text">7</id>
-        <title type="text"></title>
-        <link href="13" rel="alternate" />
+        <title type="text">Windows Phone</title>
+        <link href="https://en.wikipedia.org/wiki/Windows_Phone" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text"></details>
-        <summary type="text"></summary>
-        <summary type="text">
-        </summary>
-    </entry>
-    <entry>
-        <id type="text">8</id>
-        <title type="text"></title>
-        <link href="10" rel="alternate" />
-        <data>2012-02-25T00:30:54Z</data>
-        <details type="text"></details>
-        <summary type="text"></summary>
+        <details type="text">About Windows Phone</details>
+        <summary type="text">Why Windows Phone?</summary>
         <content type="text">
+            Windows Phone (WP) is a family of mobile operating systems developed by Microsoft for
+            smartphones as the replacement successor to Windows Mobile[5][6] and Zune.[7] Windows
+            Phone features a new user interface derived from Metro design language. Unlike Windows
+            Mobile, it is primarily aimed at the consumer market rather than the enterprise
+            market.[8] It was first launched in October 2010 with Windows Phone 7.[9] Windows Phone
+            8.1 was the last public release of the operating system, released to manufacturing on
+            April 14, 2014.[10][11] Windows Phone has been succeeded by Windows 10 Mobile, with the
+            Windows Phone name being phased out in favor of branding the platform as an edition of
+            Windows 10.
         </content>
     </entry>
     <entry>
-        <id type="text">9</id>
-        <title type="text"></title>
-        <link href="6" rel="alternate" />
+        <id type="text">8</id>
+        <title type="text">Windows Store</title>
+        <link href="https://developer.microsoft.com/en-us/windows" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text"></details>
+        <details type="text">About Windows Store</details>
+        <summary type="text">Why Windows Store?</summary>
+        <content type="text">
+            Get started with Windows apps
+            Build Windows apps now. Windows 10 makes it easier than ever to develop apps for the
+            Universal Windows Platform with just one API set and one app package to reach all
+            Windows 10 devices – PCs, tablets, phones, and more.
+            Start here
+            The Universal Windows Platform is available across all Windows device families. From PCs
+            to tablets, phones, and more, you can reach all these devices and look great on them all
+            using one store and one codebase.
+        </content>
+    </entry>
+
+    <entry>
+        <id type="text">9</id>
+        <title type="text">Visual Studio</title>
+        <link href="https://www.visualstudio.com/" rel="alternate" />
+        <data>2012-02-25T00:30:54Z</data>
+        <details type="text">About Visual Studio</details>
         <summary type="text">
+            Why Visual Studio?
         </summary>
         <content type="text">
+            Any Developer, Any App, Any Platform
         </content>
     </entry>
     <entry>
         <id type="text">10</id>
-        <title type="text"></title>
-        <link href="5" rel="alternate" />
+        <title type="text">Android Studio</title>
+        <link href="https://developer.android.com/studio/index.html" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text"></details>
-        <summary type="text"></summary>
+        <details type="text">About Android Studio</details>
+        <summary type="text">Why Android Studio?</summary>
         <content type="text">
+            Android Studio
+            The Official IDE for Android
+            Android Studio provides the fastest tools for building apps on every type of Android
+            device.
+
+            World-class code editing, debugging, performance tooling, a flexible build system, and
+            an instant build/deploy system all allow you to focus on building unique and high
+            quality apps.
         </content>
     </entry>
     <entry>
         <id type="text">11</id>
-        <title type="text"></title>
-        <link href="7" rel="alternate" />
+        <title type="text">bootstrap</title>
+        <link href="http://getbootstrap.com/" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text"></details>
-        <summary type="text"></summary>
+        <details type="text">About Bootstrap</details>
+        <summary type="text">Why Bootstrap</summary>
         <content type="text">
+            Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive,
+            mobile first projects on the web.
         </content>
     </entry>
     <entry>
         <id type="text">12</id>
-        <title type="text"></title>
-        <link href="5" rel="alternate" />
+        <title type="text">UI Bootstrap</title>
+        <link href="https://angular-ui.github.io/bootstrap/" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text"></details>
-        <summary type="text"></summary>
+        <details type="text">About UI Bootstrap</details>
+        <summary type="text">Why UI Bootstrap?</summary>
         <content type="text">
+            Bootstrap components written in pure AngularJS by the AngularUI Team
         </content>
     </entry>
     <entry>
         <id type="text">13</id>
-        <title type="text"></title>
-        <link href="11" rel="alternate" />
+        <title type="text">jquery</title>
+        <link href="https://jquery.com/" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text"></details>
-        <summary type="text"></summary>
+        <details type="text">About jquery</details>
+        <summary type="text">Why jquery?</summary>
         <content type="text">
+            What is jQuery?
+            jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML
+            document traversal and manipulation, event handling, animation, and Ajax much simpler
+            with an easy-to-use API that works across a multitude of browsers. With a combination of
+            versatility and extensibility, jQuery has changed the way that millions of people write
+            JavaScript.
         </content>
     </entry>
     <entry>
         <id type="text">14</id>
-        <title type="text"></title>
-        <link href="9" rel="alternate" />
+        <title type="text">jquerymobile</title>
+        <link href="https://jquerymobile.com/" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text"></details>
-        <summary type="text"></summary>
+        <details type="text">About jquerymobile</details>
+        <summary type="text">About jquerymobile</summary>
         <content type="text">
+            A Touch-Optimized Web Framework
+            jQuery Mobile is a HTML5-based user interface system designed to make responsive web
+            sites and apps that are accessible on all smartphone, tablet and desktop devices.
         </content>
 
     </entry>
     <entry>
         <id type="text">15</id>
-        <title type="text"></title>
-        <link href="12" rel="alternate" />
+        <title type="text">Microsoft Azure</title>
+        <link href="https://en.wikipedia.org/wiki/Microsoft_Azure" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text"></details>
-        <summary type="text">
-
+        <details type="text">About Microsoft Azure</details>
+        <summary type="text">Why Microsoft Azure?
         </summary>
         <content type="text">
-
+            Microsoft Azure is a cloud computing platform and infrastructure created by Microsoft
+            for building, deploying, and managing applications and services through a global network
+            of Microsoft-managed data centers.
+            It provides both PaaS and IaaS services and supports many different programming
+            languages, tools and frameworks, including both Microsoft-specific and third-party
+            software and systems.
+            Azure was announced in October 2008 and released on 1 February 2010 as Windows Azure,
+            before being renamed to Microsoft Azure on 25 March 2014.
         </content>
     </entry>
     <entry>
         <id type="text">16</id>
-        <title type="text"></title>
-        <link href="12" rel="alternate" />
+        <title type="text">Jenkins</title>
+        <link href="https://jenkins.io/" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text"></details>
+        <details type="text">About Jenkins</details>
         <summary type="text">
-
+            Why Jenkins?
         </summary>
         <content type="text">
-
+            Jenkins
+            Build great things at any scale
+            The leading open source automation server, Jenkins provides hundreds of plugins to
+            support building, deploying and automating any project.
         </content>
     </entry>
     <entry>
         <id type="text">17</id>
-        <title type="text"></title>
-        <link href="12" rel="alternate" />
+        <title type="text">Apache Cordova</title>
+        <link href="https://cordova.apache.org/" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text"></details>
+        <details type="text">About Cordova</details>
         <summary type="text">
-
+            Why Cordova?
         </summary>
         <content type="text">
-
+            Mobile apps with HTML, CSS &amp; JS
+            Target multiple platforms with one code base
+            Free and open source
         </content>
     </entry>
     <entry>
         <id type="text">18</id>
-        <title type="text"></title>
-        <link href="12" rel="alternate" />
+        <title type="text">WCF</title>
+        <link href="https://msdn.microsoft.com/en-us/library/ms731082(v=vs.110).aspx"
+            rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text"></details>
+        <details type="text">About WCF</details>
         <summary type="text">
-
+            Why WCF?
         </summary>
         <content type="text">
-
+            Windows Communication Foundation (WCF) is a framework for building service-oriented
+            applications. Using WCF, you can send data as asynchronous messages from one service
+            endpoint to another. A service endpoint can be part of a continuously available service
+            hosted by IIS, or it can be a service hosted in an application. An endpoint can be a
+            client of a service that requests data from a service endpoint. The messages can be as
+            simple as a single character or word sent as XML, or as complex as a stream of binary
+            data. A few sample scenarios include:
+            .A secure service to process business transactions.
+            .A service that supplies current data to others, such as a traffic report or other
+            monitoring service.
+            .A chat service that allows two people to communicate or exchange data in real time.
+            .A dashboard application that polls one or more services for data and presents it in a
+            logical presentation.
+            .Exposing a workflow implemented using Windows Workflow Foundation as a WCF service.
+            .A Silverlight application to poll a service for the latest data feeds.
+            While creating such applications was possible prior to the existence of WCF, WCF makes
+            the development of endpoints easier than ever. In summary, WCF is designed to offer a
+            manageable approach to creating Web services and Web service clients.
         </content>
     </entry>
     <entry>
         <id type="text">19</id>
-        <title type="text"></title>
-        <link href="12" rel="alternate" />
+        <title type="text">Git</title>
+        <link href="https://git-scm.com/" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text"></details>
+        <details type="text">About Git</details>
         <summary type="text">
-
+            Why Git?
         </summary>
         <content type="text">
-
+            Git is a free and open source distributed version control system designed to handle
+            everything from small to very large projects with speed and efficiency.
+            Git is easy to learn and has a tiny footprint with lightning fast performance. It
+            outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like
+            cheap local branching, convenient staging areas, and multiple workflows.
         </content>
     </entry>
     <entry>
         <id type="text">20</id>
-        <title type="text"></title>
-        <link href="12" rel="alternate" />
+        <title type="text">
+            GRUNT
+            The JavaScript Task Runner
+        </title>
+        <link href="http://gruntjs.com/" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text"></details>
+        <details type="text">About Grunt JS</details>
         <summary type="text">
-
+            Why Grunt JS?
         </summary>
         <content type="text">
-            Client: Adidas Business SA Date: 06/2010 a 06/2011 Project Description 1: Control
-            Application and payment processing management and document management Function: Analyst
-            and Programmer ▪ Surey and analysis.of requisites ▪ Business model design ▪ Database
-            criation and implementation of the application of document management ▪ Technologies
-            Used: Microsoft SQL Server 2005 and 2008,Microsoft Visual Studio 2010,Web
-            Services,Windows Forms,Asp.Net / C#
+            GRUNT
+            The JavaScript Task Runner
+            Why use a task runner?
+            In one word: automation. The less work you have to do when performing repetitive tasks
+            like minification, compilation, unit testing, linting, etc, the easier your job becomes.
+            After you've configured it through a Gruntfile, a task runner can do most of that
+            mundane work for you—and your team—with basically zero effort.
+            Why use Grunt?
+            The Grunt ecosystem is huge and it's growing every day. With literally hundreds of
+            plugins to choose from, you can use Grunt to automate just about anything with a minimum
+            of effort. If someone hasn't already built what you need, authoring and publishing your
+            own Grunt plugin to npm is a breeze. See how to get started.
         </content>
     </entry>
     <entry>
         <id type="text">21</id>
-        <title type="text"></title>
-        <link href="12" rel="alternate" />
+        <title type="text">json</title>
+        <link href="http://www.json.org/" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text"></details>
+        <details type="text">About json</details>
         <summary type="text">
-
+            Why json?
         </summary>
         <content type="text">
-
+            ECMA-404 The JSON Data Interchange Standard.
+            JSON (JavaScript Object Notation) is a lightweight data-interchange format. It is easy
+            for humans to read and write. It is easy for machines to parse and generate. It is based
+            on a subset of the JavaScript Programming Language, Standard ECMA-262 3rd Edition -
+            December 1999. JSON is a text format that is completely language independent but uses
+            conventions that are familiar to programmers of the C-family of languages, including C,
+            C++, C#, Java, JavaScript, Perl, Python, and many others. These properties make JSON an
+            ideal data-interchange language.
+            JSON is built on two structures:
+            A collection of name/value pairs. In various languages, this is realized as an object,
+            record, struct, dictionary, hash table, keyed list, or associative array.
+            An ordered list of values. In most languages, this is realized as an array, vector,
+            list, or sequence.
+            These are universal data structures. Virtually all modern programming languages support
+            them in one form or another. It makes sense that a data format that is interchangeable
+            with programming languages also be based on these structures.
+            In JSON, they take on these forms:
+            An object is an unordered set of name/value pairs. An object begins with { (left brace)
+            and ends with } (right brace). Each name is followed by : (colon) and the name/value
+            pairs are separated by , (comma).
         </content>
     </entry>
     <entry>
         <id type="text">22</id>
-        <title type="text"></title>
-        <link href="12" rel="alternate" />
+        <title type="text">Bower</title>
+        <link href="https://bower.io/" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text"></details>
+        <details type="text">About Bower</details>
         <summary type="text">
-
+            Why Bower?
         </summary>
         <content type="text">
-
+            Bower
+            A package manager for the web
+            Web sites are made of lots of things — frameworks, libraries, assets, and utilities.
+            Bower manages all these things for you.
+            Keeping track of all these packages and making sure they are up to date (or set to the
+            specific versions you need) is tricky. Bower to the rescue!
+            Bower can manage components that contain HTML, CSS, JavaScript, fonts or even image
+            files. Bower doesn’t concatenate or minify code or do anything else - it just installs
+            the right versions of the packages you need and their dependencies.
+            To get started, Bower works by fetching and installing packages from all over, taking
+            care of hunting, finding, downloading, and saving the stuff you’re looking for. Bower
+            keeps track of these packages in a manifest file, bower.json. How you use packages is up
+            to you. Bower provides hooks to facilitate using packages in your tools and workflows.
+            Bower is optimized for the front-end. If multiple packages depend on a package - jQuery
+            for example - Bower will download jQuery just once. This is known as a flat dependency
+            graph and it helps reduce page load.
         </content>
     </entry>
     <entry>
         <id type="text">23</id>
         <title type="text">Hibernate</title>
-        <link href="12" rel="alternate" />
+        <link href="http://hibernate.org/" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text"></details>
+        <details type="text">About Hibernate</details>
         <summary type="text">
-
+            Why Hibernate?
         </summary>
         <content type="text">
-
+            Hibernate ORM (Hibernate in short) is an object-relational mapping framework for the
+            Java language. It provides a framework for mapping an object-oriented domain model to a
+            relational database. Hibernate solves object-relational impedance mismatch problems by
+            replacing direct, persistent database accesses with high-level object handling
+            functions.
+            Hibernate is free software that is distributed under the GNU Lesser General Public
+            License 2.1.
+            Hibernate's primary feature is mapping from Java classes to database tables; and mapping
+            from Java data types to SQL data types. Hibernate also provides data query and retrieval
+            facilities. It generates SQL calls and relieves the developer from manual handling and
+            object conversion of the result set.
         </content>
     </entry>
     <entry>
         <id type="text">24</id>
-        <title type="text"></title>
-        <link href="12" rel="alternate" />
+        <title type="text">Entity Framework</title>
+        <link href="https://msdn.microsoft.com/en-us/data/ef.aspx" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
-        <details type="text"></details>
+        <details type="text">About EF</details>
         <summary type="text">
-
+            Why Entity Framework?
         </summary>
         <content type="text">
+            What is Entity Framework
+            Entity Framework (EF) is an object-relational mapper that enables .NET developers to
+            work with relational data using domain-specific objects. It eliminates the need for most
+            of the data-access code that developers usually need to write.
+
 
         </content>
     </entry>

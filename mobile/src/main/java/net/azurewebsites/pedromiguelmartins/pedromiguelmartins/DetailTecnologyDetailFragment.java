@@ -11,8 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.google.android.gms.plus.PlusOneButton;
-
 import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.technology.TechnologyContent;
 
 import org.xmlpull.v1.XmlPullParserException;
@@ -35,13 +33,9 @@ public class DetailTecnologyDetailFragment extends Fragment {
      */
 
     public static final String ARG_ITEM_ID = "item_id";
-    // The request code must be 0 or greater.
-    private static final int PLUS_ONE_REQUEST_CODE = 0;
-    // The URL to +1.  Must be a valid URL.
-    private final String PLUS_ONE_URL = "http://pedromiguelmartins.azurewebsites.net/#home";
-    PlusOneButton mPlusOneButton;
+
     /**
-     * The dummy content this fragment is presenting.
+     * The article content this fragment is presenting.
      */
     private TechnologyContent.TechnologyItem mItem;
 
@@ -82,15 +76,8 @@ public class DetailTecnologyDetailFragment extends Fragment {
         List<TechnologyContent.TechnologyItem> ITEMS = new ArrayList<TechnologyContent.TechnologyItem>();
         for (ProjectXmlParser.Entry entry : entries) {
 
-            // If the user set the preference to include summary text,
-            // adds it to the display.
-            Integer value = Integer.parseInt(entry.id);
-            if (value == null)
-                value = 14;
-            Integer res = Utils.GetTechnologiesListImages()[value];
-            if (res == null)
-                res = 14;
-            ITEMS.add(new TechnologyContent.TechnologyItem(entry.title, entry.content, entry.details, entry.summary, res, entry.id));
+
+            ITEMS.add(new TechnologyContent.TechnologyItem(entry.title, entry.content, entry.details, entry.summary, entry.link, entry.id));
         }
 
         return ITEMS;
@@ -108,7 +95,7 @@ public class DetailTecnologyDetailFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         if (getArguments().containsKey(ARG_ITEM_ID)) {
-            // Load the dummy content specified by the fragment
+            // Load the article content specified by the fragment
             // arguments. In a real-world scenario, use a Loader
             // to load content from a content provider.
             // mItem = ContactContent.ITEM_MAP.get(getArguments().getString(ARG_ITEM_ID));
@@ -135,6 +122,7 @@ public class DetailTecnologyDetailFragment extends Fragment {
         // Show the technology content as text in a TextView.
         if (mItem != null) {
             ((TextView) rootView.findViewById(R.id.detailtecnology_detail)).setText(mItem.content);
+            ((TextView) rootView.findViewById(R.id.link)).setText(mItem.link);
         }
 
         return rootView;

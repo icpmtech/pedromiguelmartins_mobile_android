@@ -25,6 +25,7 @@ import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
+import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.article.ArticleContent;
 import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.contact.ContactContent;
 import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.project.ProjectContent;
 import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.resume.ResumeContent;
@@ -47,7 +48,8 @@ public class MainHomeActivity extends AppCompatActivity
         TechnologyFragment.OnListFragmentInteractionListener,
         ProjectFragment.OnListFragmentInteractionListener,
         ToolFragment.OnListFragmentInteractionListener,
-        ContactFragment.OnListFragmentInteractionListener {
+        ContactFragment.OnListFragmentInteractionListener,
+        ArticleFragment.OnListFragmentInteractionListener {
 
     Toolbar toolbar;
     /**
@@ -228,7 +230,11 @@ public class MainHomeActivity extends AppCompatActivity
 
         }  else if (id == R.id.nav_contact) {
             fragment = new ContactFragment();
+        } else if (id == R.id.nav_gallery) {
+
+            fragment = new ArticleFragment();
         }
+
         if (fragment != null) {
             FragmentManager fragmentManager = getFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.drawer_content, fragment).commit();
@@ -336,5 +342,12 @@ public class MainHomeActivity extends AppCompatActivity
     @Override
     public void onListFragmentInteraction(ContactContent.ContactItem item) {
 
+    }
+
+    @Override
+    public void onListFragmentInteraction(ArticleContent.ArticleItem item) {
+        Intent intent = new Intent(this.getBaseContext(), ArticleDetailActivity.class);
+        intent.putExtra("item_id", item.id);
+        startActivity(intent);
     }
 }

@@ -120,6 +120,24 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="net.azurewebsites.pedromiguelmartins.pedromiguelmartins.ProjectDetailListActivity" />
         </activity>
+        <activity
+            android:name=".ArticleListActivity"
+            android:label="@string/title_article_list"
+            android:parentActivityName=".MainHomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.azurewebsites.pedromiguelmartins.pedromiguelmartins.MainHomeActivity" />
+        </activity>
+        <activity
+            android:name=".ArticleDetailActivity"
+            android:label="@string/title_article_detail"
+            android:parentActivityName=".ArticleListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.azurewebsites.pedromiguelmartins.pedromiguelmartins.ArticleListActivity" />
+        </activity>
     </application>
 
 </manifest>

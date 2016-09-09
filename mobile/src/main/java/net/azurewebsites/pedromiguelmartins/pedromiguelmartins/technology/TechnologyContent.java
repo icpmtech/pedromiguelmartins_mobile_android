@@ -76,6 +76,7 @@ public class TechnologyContent {
         public final String details;
         public final Integer thumbnail;
         public final String summary;
+        public final String link;
 
         public TechnologyItem(String title, String content, String details, String summary, Integer thumbnail, String id) {
             this.title = title;
@@ -84,6 +85,17 @@ public class TechnologyContent {
             this.details = details;
             this.thumbnail = thumbnail;
             this.id = id;
+            link = null;
+        }
+
+        public TechnologyItem(String title, String content, String details, String summary, String link, String id) {
+            this.title = title;
+            this.content = content;
+            this.summary = summary;
+            this.details = details;
+            this.link = link;
+            this.id = id;
+            thumbnail = null;
         }
 
         @Override

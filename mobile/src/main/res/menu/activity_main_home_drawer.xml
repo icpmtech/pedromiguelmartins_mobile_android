@@ -21,7 +21,7 @@
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:title="Articles and Publications" />
         <item
             android:id="@+id/nav_projects"
             android:icon="@drawable/ic_menu_slideshow"

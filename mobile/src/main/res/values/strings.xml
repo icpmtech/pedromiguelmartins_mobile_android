@@ -127,4 +127,7 @@
     <string name="title_projectdetail_list">ProjectDetails</string>
     <string name="title_projectdetail_detail">ProjectDetail Detail</string>
     <string name="URL_CONTACT">contact/contact.xml</string>
+    <string name="title_article_list">Articles</string>
+    <string name="title_article_detail">Article Detail</string>
+    <string name="URL_ARTICLE">article/article.xml</string>
 </resources>
