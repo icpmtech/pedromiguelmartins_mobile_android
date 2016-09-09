@@ -1,8 +1,9 @@
 package net.azurewebsites.pedromiguelmartins.pedromiguelmartins;
 
-import android.content.Context;
-import android.os.Bundle;
 import android.app.Fragment;
+import android.content.Context;
+import android.content.res.AssetManager;
+import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -12,6 +13,13 @@ import android.view.ViewGroup;
 
 import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.contact.ContactContent;
 import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.contact.ContactContent.ContactItem;
+
+import org.xmlpull.v1.XmlPullParserException;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A fragment representing a list of Items.
@@ -44,6 +52,50 @@ public class ContactFragment extends Fragment {
         return fragment;
     }
 
+    private static List<ContactContent.ContactItem> loadXmlFromXML(String urlString, Context context) throws XmlPullParserException, IOException {
+        AssetManager assetManager = context.getResources().getAssets();
+        InputStream stream = null;
+        // Instantiate the parser
+        ProjectXmlParser stackOverflowXmlParser = new ProjectXmlParser();
+        List<ProjectXmlParser.Entry> entries = null;
+        String title = null;
+        String url = null;
+        String summary = null;
+
+
+        try {
+            stream = assetManager.open(urlString);
+            entries = stackOverflowXmlParser.parse(stream, TypeParser.RESUME);
+            // Makes sure that the InputStream is closed after the app is
+            // finished using it.
+        } finally {
+            if (stream != null) {
+                stream.close();
+            }
+        }
+
+        // StackOverflowXmlParser returns a List (called "entries") of Entry objects.
+        // Each Entry object represents a single post in the XML feed.
+        // This section processes the entries list to combine each entry with HTML markup.
+        // Each entry is displayed in the UI as a link that optionally includes
+        // a text summary.
+        List<ContactContent.ContactItem> ITEMS = new ArrayList<ContactContent.ContactItem>();
+        for (ProjectXmlParser.Entry entry : entries) {
+
+            // If the user set the preference to include summary text,
+            // adds it to the display.
+            Integer value = Integer.parseInt(entry.id);
+            if (value == null)
+                value = 0;
+            Integer res = Utils.GetContactsListImages()[value];
+            if (res == null)
+                res = 0;
+            ITEMS.add(new ContactContent.ContactItem(entry.title, entry.content, entry.details, entry.summary, res, entry.id));
+        }
+
+        return ITEMS;
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,6 +118,14 @@ public class ContactFragment extends Fragment {
                 recyclerView.setLayoutManager(new LinearLayoutManager(context));
             } else {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
+            }
+            try {
+                recyclerView.setAdapter(new MyContactRecyclerViewAdapter(context, loadXmlFromXML(getResources().getString(R.string.URL_CONTACT), context), mListener));
+                return view;
+            } catch (XmlPullParserException e) {
+                // e.printStackTrace();
+            } catch (IOException e) {
+                //  e.printStackTrace();
             }
             recyclerView.setAdapter(new MyContactRecyclerViewAdapter(context,ContactContent.ITEMS, mListener));
         }

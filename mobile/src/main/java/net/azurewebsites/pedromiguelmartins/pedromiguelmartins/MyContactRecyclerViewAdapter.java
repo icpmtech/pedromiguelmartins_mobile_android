@@ -48,6 +48,7 @@ public class MyContactRecyclerViewAdapter extends RecyclerView.Adapter<MyContact
     public void onBindViewHolder(final ViewHolder holder, final int position) {
         holder.mItem = mValues.get(position);
         holder.mIdView.setText(mValues.get(position).title);
+
         holder.mContentView.setText(mValues.get(position).details);
         holder.mSummaryView.setText(mValues.get(position).summary);
 
