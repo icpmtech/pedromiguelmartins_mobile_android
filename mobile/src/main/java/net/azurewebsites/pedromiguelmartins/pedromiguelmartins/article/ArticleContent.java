@@ -103,6 +103,18 @@ public class ArticleContent {
             thumbnail = null;
         }
 
+        public ArticleItem(String title, String content, String details, String summary, String link, String id, Integer thumbnail) {
+            this.title = title;
+            this.content = content;
+            this.summary = summary;
+            this.details = details;
+            this.link = link;
+            this.id = id;
+            this.thumbnail = thumbnail;
+        }
+
+
+
 
         @Override
         public String toString() {

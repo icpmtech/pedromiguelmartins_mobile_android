@@ -14,6 +14,9 @@ import android.view.ViewGroup;
 import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.article.ArticleContent;
 import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.article.ArticleContent.ArticleItem;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.IOException;
@@ -52,7 +55,28 @@ public class ArticleFragment extends Fragment {
         return fragment;
     }
 
-    public static List<ArticleContent.ArticleItem> loadXmlFromXML(String urlString, Context context) throws XmlPullParserException, IOException {
+
+    public List<ArticleContent.ArticleItem> findAllItems(List<ArticleContent.ArticleItem> foundItems) {
+        JSONArray serviceResult = Utils.requestWebService("http://pedromiguelmartins.azurewebsites.net/api/Articles");
+
+
+        try {
+            JSONArray items = serviceResult;
+
+            for (int i = 0; i < items.length(); i++) {
+                JSONObject obj = items.getJSONObject(i);
+                foundItems.add(new ArticleContent.ArticleItem(obj.getString("title"), obj.getString("content"), obj.getString("details"), obj.getString("summary"), 1, obj.getString("id")));
+
+            }
+
+        } catch (JSONException e) {
+            // handle exception
+        }
+
+        return foundItems;
+    }
+
+    public List<ArticleContent.ArticleItem> loadXmlFromXML(String urlString, Context context) throws XmlPullParserException, IOException {
         AssetManager assetManager = context.getResources().getAssets();
         InputStream stream = null;
         // Instantiate the parser
@@ -93,7 +117,7 @@ public class ArticleFragment extends Fragment {
             ITEMS.add(new ArticleContent.ArticleItem(entry.title, entry.content, entry.details, entry.summary, res, entry.id));
         }
 
-        return ITEMS;
+        return findAllItems(ITEMS);
     }
 
     @Override
@@ -121,6 +145,7 @@ public class ArticleFragment extends Fragment {
             }
             try {
                 recyclerView.setAdapter(new MyArticleRecyclerViewAdapter(context, loadXmlFromXML(getResources().getString(R.string.URL_ARTICLE), context), mListener));
+
                 return view;
             } catch (XmlPullParserException e) {
                 // e.printStackTrace();
