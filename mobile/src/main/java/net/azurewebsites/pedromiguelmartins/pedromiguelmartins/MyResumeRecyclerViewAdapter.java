@@ -1,18 +1,14 @@
 package net.azurewebsites.pedromiguelmartins.pedromiguelmartins;
 
 import android.content.Context;
-import android.content.Intent;
 import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.RecyclerView;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,8 +19,6 @@ import net.azurewebsites.pedromiguelmartins.pedromiguelmartins.resume.ResumeCont
 
 import java.util.List;
 
-import static android.support.v4.app.ActivityCompat.startActivity;
-
 /**
  * {@link RecyclerView.Adapter} that can display a {@link ResumeItem} and makes a call to the
  * specified {@link OnListFragmentInteractionListener}.
@@ -34,6 +28,8 @@ public class MyResumeRecyclerViewAdapter extends RecyclerView.Adapter<MyResumeRe
     private final List<ResumeItem> mValues;
     private final OnListFragmentInteractionListener mListener;
     private Context mContext;
+    private String listItemDetailsForPopupMenu;
+
     public MyResumeRecyclerViewAdapter(Context mContext,List<ResumeItem> items, OnListFragmentInteractionListener listener) {
         mValues = items;
         this.mContext = mContext;
@@ -63,8 +59,7 @@ public class MyResumeRecyclerViewAdapter extends RecyclerView.Adapter<MyResumeRe
                     // fragment is attached to one) that an item has been selected.
 
 
-
-                   showPopupMenu(holder.overflow,mValues.get(position).content);
+                    //  showPopupMenu(holder.overflow,mValues.get(position).content);
                     mListener.onListFragmentInteraction(holder.mItem);
                    // Context context = v.getContext();
                    // Intent intent = new Intent(context, ResumeDetailsActivity.class);
@@ -73,7 +68,7 @@ public class MyResumeRecyclerViewAdapter extends RecyclerView.Adapter<MyResumeRe
             }
         });
     }
-    private String listItemDetailsForPopupMenu;
+
     /**
      * Showing popup menu when tapping on 3 dots
      */
@@ -85,6 +80,11 @@ public class MyResumeRecyclerViewAdapter extends RecyclerView.Adapter<MyResumeRe
         inflater.inflate(R.menu.menu_main, popup.getMenu());
         popup.setOnMenuItemClickListener(new MyMenuItemClickListener());
         popup.show();
+    }
+
+    @Override
+    public int getItemCount() {
+        return mValues.size();
     }
 
     /**
@@ -119,21 +119,13 @@ public class MyResumeRecyclerViewAdapter extends RecyclerView.Adapter<MyResumeRe
 
     }
 
-
-
-
-    @Override
-    public int getItemCount() {
-        return mValues.size();
-    }
-
     public class ViewHolder extends RecyclerView.ViewHolder {
         public final View mView;
         public final TextView mIdView;
         public final TextView mContentView;
         public final TextView mSummaryView;
-        public  ResumeItem mItem;
         public final ImageView thumbnail, overflow;
+        public ResumeItem mItem;
 
         public ViewHolder(View view) {
             super(view);

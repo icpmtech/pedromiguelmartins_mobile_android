@@ -60,11 +60,10 @@ public class MyTechnologyRecyclerViewAdapter extends RecyclerView.Adapter<MyTech
                     // fragment is attached to one) that an item has been selected.
 
 
-                    showPopupMenu(holder.overflow, mValues.get(position).content);
+                    // showPopupMenu(holder.overflow, mValues.get(position).content);
+
+
                     mListener.onListFragmentInteraction(holder.mItem);
-                    // Context context = v.getContext();
-                    // Intent intent = new Intent(context, ResumeDetailsActivity.class);
-                    // context.startActivity(intent);
                 }
             }
         });
@@ -111,6 +110,7 @@ public class MyTechnologyRecyclerViewAdapter extends RecyclerView.Adapter<MyTech
             switch (item.getItemId()) {
                 case R.id.action_details:
                     Toast.makeText(mContext, listItemDetailsForPopupMenu, Toast.LENGTH_LONG).show();
+
                     return true;
 
                 default:

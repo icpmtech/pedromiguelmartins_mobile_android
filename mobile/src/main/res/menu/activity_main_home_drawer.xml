@@ -21,14 +21,20 @@
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:title="Articles and Publications" />
         <item
             android:id="@+id/nav_projects"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Projects" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_profile_menu"
+            android:title="Contacts" />
 
 
     </group>
+
+
     <item android:title="How i do">
         <menu>
             <item
@@ -36,7 +42,7 @@
                 android:icon="@drawable/ic_menu_tech"
                 android:title="My Technologies" />
             <item
-                android:id="@+id/nav_manage"
+                android:id="@+id/nav_tool"
                 android:icon="@drawable/ic_menu_manage"
                 android:title="My Tools" />
         </menu>
@@ -51,5 +57,6 @@
                 android:title="Send" />
         </menu>
     </item>
+
 
 </menu>

@@ -42,7 +42,6 @@ public class ResumeFragment extends Fragment {
     public ResumeFragment() {
     }
 
-    // TODO: Customize parameter initialization
     @SuppressWarnings("unused")
     public static ResumeFragment newInstance(int columnCount) {
         ResumeFragment fragment = new ResumeFragment();
@@ -90,7 +89,7 @@ public class ResumeFragment extends Fragment {
             Integer res = Utils.GetResumeListImages()[value];
             if (res == null)
                 res = 14;
-            ITEMS.add(new ResumeItem(entry.title, entry.content, entry.details, entry.summary, res));
+            ITEMS.add(new ResumeItem(entry.title, entry.content, entry.details, entry.summary, res, entry.id));
         }
 
         return ITEMS;

@@ -60,7 +60,7 @@ public class MyProjectRecyclerViewAdapter extends RecyclerView.Adapter<MyProject
                     // fragment is attached to one) that an item has been selected.
 
 
-                    showPopupMenu(holder.overflow, mValues.get(position).content);
+                    //  showPopupMenu(holder.overflow, mValues.get(position).content);
                     mListener.onListFragmentInteraction(holder.mItem);
                     // Context context = v.getContext();
                     // Intent intent = new Intent(context, ResumeDetailsActivity.class);

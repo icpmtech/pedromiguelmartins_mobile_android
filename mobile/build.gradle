@@ -8,8 +8,9 @@ android {
         applicationId "net.azurewebsites.pedromiguelmartins.pedromiguelmartins"
         minSdkVersion 23
         targetSdkVersion 24
-        versionCode 1
-        versionName "1.0"
+        versionCode 4
+        versionName "1.0.3"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -34,4 +35,6 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:24.2.0'
     compile 'com.github.bumptech.glide:glide:3.7.0'
     compile 'com.github.championswimmer:Android-SocialButtons:1.0'
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    compile 'com.android.support:multidex:+'
 }

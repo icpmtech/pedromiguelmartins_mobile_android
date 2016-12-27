@@ -90,7 +90,7 @@ public class TechnologyFragment extends Fragment {
             Integer res = Utils.GetTechnologiesListImages()[value];
             if (res == null)
                 res = 14;
-            ITEMS.add(new TechnologyContent.TechnologyItem(entry.title, entry.content, entry.details, entry.summary, res));
+            ITEMS.add(new TechnologyContent.TechnologyItem(entry.title, entry.content, entry.details, entry.summary, res, entry.id));
         }
 
         return ITEMS;

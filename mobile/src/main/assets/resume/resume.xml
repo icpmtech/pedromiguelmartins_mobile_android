@@ -51,7 +51,7 @@
         </content>
     </entry>
     <entry>
-        <id type="text">3</id>
+        <id type="text">4</id>
         <title type="text">SENIOR CONSULTANT</title>
         <link href="4" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
@@ -63,7 +63,7 @@
          </content>
     </entry>
     <entry>
-        <id type="text">3</id>
+        <id type="text">5</id>
         <title type="text"></title>
         <link href="4" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
@@ -75,7 +75,7 @@
         </content>
     </entry>
     <entry>
-        <id type="text">5</id>
+        <id type="text">6</id>
         <title type="text">SENIOR CONSULTANT</title>
         <link href="14" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
@@ -85,7 +85,7 @@
         </content>
     </entry>
     <entry>
-        <id type="text">6</id>
+        <id type="text">7</id>
         <title type="text">SENIOR CONSULTANT</title>
         <link href="13" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
@@ -94,7 +94,7 @@
         <summary type="text">Company:Pedro Martins Client: Pedro Martins Lisbon (Portugal) Date: 2015 Project Scope: mobile application pedrommartins.com Function: Senior Consultant ▪	Analysis and estimation of requisites; ▪ Implemented the application pedrommartins.com; ▪	Deploy to Windows Store. Technologies used: Windows Mobile, .NET 4.5, C#, SOAP, WCF, SQL, ENTITY FRAMEWORK, LINQ </summary>
     </entry>
     <entry>
-        <id type="text">7</id>
+        <id type="text">8</id>
         <title type="text">SENIOR CONSULTANT</title>
         <link href="10" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
@@ -103,7 +103,7 @@
         <content type="text"> Company:Ludite Client: Ludite Porto (Portugal) Date: 2014 to 2015 Project Scope : Store application Ludite Sa on Store Windows Function: Senior Consultant ▪	Analysis and estimation of requisites; ▪ Implemented the application Ludite Sa on Store Windows; ▪	Deploy to Windows Store. Technologies used: WinJs, .NET 4.5, C#, SOAP, WCF, SQL, ENTITY FRAMEWORK, LINQ</content>
     </entry>
     <entry>
-        <id type="text">8</id>
+        <id type="text">9</id>
         <title type="text">SENIOR CONSULTANT</title>
         <link href="6" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
@@ -112,7 +112,7 @@
         <content type="text">Company: Affinity Client: Novabase/OCTAL ENGINEERING Lisbon (Portugal) Sector: Transports and Ticketing Date: 10/2012 to 01/2013 Project Scope: Developement of a ticketing system on distributed services Project Contribution: ▪	Analysis of architecture and design of the same; ▪	Creation of Backends (WCF) for use by Frontends (Html5 +Jquery+JqueryEasyui). Function: Senior consultant Technologies used: ASP.NET,MVC4, SQL SERVER 2012, C#, Web Services,WCF,Json Javascript,Html5 </content>
     </entry>
     <entry>
-        <id type="text">9</id>
+        <id type="text">10</id>
         <title type="text">CONSULTANT</title>
         <link href="5" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
@@ -121,7 +121,7 @@
         <content type="text">Company: KCS IT Client: ZON MULTIMEDIA Lisbon (Portugal) Date: 08/2012 to 09/2012 Project Scope 1: Zon Box Iris- Widget ZonSagres2011/2012 Project Contribution: ▪	Development of widgets Html to Javascript; ▪	Analysis of architecture and drawing the,same; ▪ Creation of Backends(WCF) for used by Frontends(Widgets Html +Javascript). Technologies used: ASP.NET, XML, SQL SERVER 2008, C#, Web Services,WCF,Javascript,xHtml,Ajax Project Scope 2: Zon Box Iris- Widget Bolsa Project Contribution: ▪	Development of widgets Html to Javascript; ▪	Analysis of architecture and design of.the same; ▪	Creation of Backends(WCF) for used by Frontends(Widgets Html +Javascript). Technologies used: ASP.NET, XML, SQL SERVER 2008, C#, Web Services,WCF Project Scope 3: CMS Project Contribution: ▪ Development of CMS for creation of an information design specification in XML whit a parser Html and manipulation in Jquery and Javascript as well.as Jquery UI; ▪	Analysis of the architecture and design of the same; Technologies used: C#,Mvc3,Jquery,JqueryUI,XML, ENTITY FRAMEWORK, LINQ </content>
     </entry>
     <entry>
-        <id type="text">10</id>
+        <id type="text">11</id>
         <title type="text">CONSULTANT</title>
         <link href="7" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
@@ -130,7 +130,7 @@
         <content type="text">Company: KCS IT Client: PUBLICO Lisbon (Portugal) Date: from 06/2012 to 08/2012 Project Scope: Creation of the new website newspaper O Publico www.publico.pt. Function: Consultant Analyst/Programmer Project Contribution: ▪	Analysis and estimation of tasks; ▪	Development of new features oriented services; ▪	Analysis and screening problems in architectural. Technologies used: .WCF, SQL Server 2008, Mvc3 </content>
     </entry>
     <entry>
-        <id type="text">11</id>
+        <id type="text">12</id>
         <title type="text">CONSULTANT</title>
         <link href="5" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
@@ -139,7 +139,7 @@
         <content type="text"> Company: KCS IT Client: ZON MULTIMEDIA Lisbon (Portugal) Date: 05/2012 Project Scope 1: Sureys of.IT solutions present in Zon Multimédia and make suggestions.of.improements in terms of architecture. Approach to implementation teams with analysis. Function: Consultant ▪	Lifting requisites ▪	Analysis and estimation of tasks; ▪	Suggestion for improement and best pratices of software; ▪ Analysis and screening detected problems. Technologies used: ASP.NET, .NET 4.5, C#, SOAP, WCF, SQL, ENTITY FRAMEWORK, LINQ</content>
     </entry>
     <entry>
-        <id type="text">11</id>
+        <id type="text">13</id>
         <title type="text">CONSULTANT</title>
         <link href="11" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
@@ -148,7 +148,7 @@
             <content type="text">Company:BTO- Besides The Obvious Client: Samsung Lisbon (Portugal) Date: 2012 Project Scope:Make the corporate web site to Samsung from Portugal Function: Consultant ▪	Analysis and estimation of requisites; ▪	Create the web site and former the team with the technologies used; ▪	Implement the SCRUM in the team. Technologies used: ASP.NET, .NET 4.5, C#, SOAP, WCF, SQL, ENTITY FRAMEWORK, LINQ</content>
     </entry>
     <entry>
-        <id type="text">11</id>
+        <id type="text">14</id>
         <title type="text">SOFTWARE PROGRAMMER</title>
         <link href="9" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
@@ -158,7 +158,7 @@
 
     </entry>
     <entry>
-        <id type="text">12</id>
+        <id type="text">15</id>
         <title type="text">CONSULTANT</title>
         <link href="12" rel="alternate" />
         <data>2012-02-25T00:30:54Z</data>
