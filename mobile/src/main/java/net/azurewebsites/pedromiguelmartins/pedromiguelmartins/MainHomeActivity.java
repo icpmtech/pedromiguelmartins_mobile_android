@@ -308,7 +308,9 @@ public class MainHomeActivity extends AppCompatActivity
     @Override
     public void onListFragmentInteraction(ProjectContent.ProjectItem item) {
         Intent intent = new Intent(this.getBaseContext(), ProjectDetailDetailActivity.class);
+
         intent.putExtra("item_id", item.id);
+
         startActivity(intent);
     }
 
@@ -347,7 +349,15 @@ public class MainHomeActivity extends AppCompatActivity
     @Override
     public void onListFragmentInteraction(ArticleContent.ArticleItem item) {
         Intent intent = new Intent(this.getBaseContext(), ArticleDetailActivity.class);
+        if(item.typeIsService) {
+            Bundle extras = new Bundle();
+            extras.putString("content",item.content);
+            extras.putString("title",item.title);
+            extras.putString("link",item.link);
+            intent.putExtras(extras);
+        }
         intent.putExtra("item_id", item.id);
+
         startActivity(intent);
     }
 }

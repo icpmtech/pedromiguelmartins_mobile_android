@@ -1,7 +1,10 @@
 package net.azurewebsites.pedromiguelmartins.pedromiguelmartins;
 
+import android.app.ProgressDialog;
+import android.content.Context;
 import android.os.Build;
 import android.os.StrictMode;
+import android.view.View;
 
 import org.jetbrains.annotations.Contract;
 import org.json.JSONArray;
@@ -251,7 +254,23 @@ public  class  Utils {
 
         return null;
     }
+    public static void launchRingDialog(View view, Context context) {
+        final ProgressDialog ringProgressDialog = ProgressDialog.show(context, "Please wait ...",	"Downloading Articles ...", true);
+        ringProgressDialog.setCancelable(true);
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    // Here you should write your time consuming task...
+                    // Let the progress ring for 10 seconds...
+                    Thread.sleep(10000);
+                } catch (Exception e) {
 
+                }
+                ringProgressDialog.dismiss();
+            }
+        }).start();
+    }
     private static String getResponseText(InputStream inStream) {
         // very nice trick from
         // http://weblogs.java.net/blog/pat/archive/2004/10/stupid_scanner_1.html

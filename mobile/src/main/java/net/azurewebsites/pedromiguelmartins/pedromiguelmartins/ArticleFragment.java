@@ -1,9 +1,11 @@
 package net.azurewebsites.pedromiguelmartins.pedromiguelmartins;
 
 import android.app.Fragment;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.res.AssetManager;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -37,6 +39,8 @@ public class ArticleFragment extends Fragment {
     // TODO: Customize parameters
     private int mColumnCount = 2;
     private OnListFragmentInteractionListener mListener;
+    ProgressDialog barProgressDialog;
+    Handler updateBarHandler;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -57,6 +61,7 @@ public class ArticleFragment extends Fragment {
 
 
     public List<ArticleContent.ArticleItem> findAllItems(List<ArticleContent.ArticleItem> foundItems) {
+
         JSONArray serviceResult = Utils.requestWebService("http://pedromiguelmartins.azurewebsites.net/api/Articles");
 
 
@@ -65,7 +70,7 @@ public class ArticleFragment extends Fragment {
 
             for (int i = 0; i < items.length(); i++) {
                 JSONObject obj = items.getJSONObject(i);
-                foundItems.add(new ArticleContent.ArticleItem(obj.getString("title"), obj.getString("content"), obj.getString("details"), obj.getString("summary"), 1, obj.getString("id")));
+                foundItems.add(new ArticleContent.ArticleItem(obj.getString("title"), obj.getString("content"), obj.getString("details"), obj.getString("summary"), 1, obj.getString("id"), true));
 
             }
 
@@ -114,7 +119,7 @@ public class ArticleFragment extends Fragment {
             Integer res = Utils.GetArticleListImages()[value];
             if (res == null)
                 res = 14;
-            ITEMS.add(new ArticleContent.ArticleItem(entry.title, entry.content, entry.details, entry.summary, res, entry.id));
+            ITEMS.add(new ArticleContent.ArticleItem(entry.title, entry.content, entry.details, entry.summary, res, entry.id,false));
         }
 
         return findAllItems(ITEMS);
@@ -129,6 +134,48 @@ public class ArticleFragment extends Fragment {
         }
     }
 
+
+    public void launchBarDialog(View view) {
+        barProgressDialog = new ProgressDialog(getContext());
+
+        barProgressDialog.setTitle("Downloading articles ...");
+        barProgressDialog.setMessage("Download in progress ...");
+        barProgressDialog.setProgressStyle(barProgressDialog.STYLE_HORIZONTAL);
+        barProgressDialog.setProgress(0);
+        barProgressDialog.setMax(20);
+        barProgressDialog.show();
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+
+                    // Here you should write your time consuming task...
+                    while (barProgressDialog.getProgress() <= barProgressDialog.getMax()) {
+
+                        Thread.sleep(2000);
+
+                        updateBarHandler.post(new Runnable() {
+
+                            public void run() {
+
+                                barProgressDialog.incrementProgressBy(2);
+
+                            }
+
+                        });
+
+                        if (barProgressDialog.getProgress() == barProgressDialog.getMax()) {
+
+                            barProgressDialog.dismiss();
+
+                        }
+                    }
+                } catch (Exception e) {
+                }
+            }
+        }).start();
+    }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -144,6 +191,8 @@ public class ArticleFragment extends Fragment {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
             }
             try {
+               // updateBarHandler = new Handler();
+                Utils.launchRingDialog(view,getContext());
                 recyclerView.setAdapter(new MyArticleRecyclerViewAdapter(context, loadXmlFromXML(getResources().getString(R.string.URL_ARTICLE), context), mListener));
 
                 return view;
