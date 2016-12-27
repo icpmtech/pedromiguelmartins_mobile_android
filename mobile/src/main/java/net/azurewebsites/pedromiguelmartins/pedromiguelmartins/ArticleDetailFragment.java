@@ -76,7 +76,7 @@ public class ArticleDetailFragment extends Fragment {
         for (ProjectXmlParser.Entry entry : entries) {
 
 
-            ITEMS.add(new ArticleContent.ArticleItem(entry.title, entry.content, entry.details, entry.summary, entry.link, entry.id));
+            ITEMS.add(new ArticleContent.ArticleItem(entry.title, entry.content, entry.details, entry.summary, entry.link, entry.id, false));
         }
 
         return ITEMS;
@@ -87,23 +87,28 @@ public class ArticleDetailFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         if (getArguments().containsKey(ARG_ITEM_ID)) {
+
             // Load the article content specified by the fragment
             // arguments. In a real-world scenario, use a Loader
             // to load content from a content provider.
+            if (!(getArguments().containsKey("title")))
+                try {
 
-            try {
-                mItem = loadXmlFromXML(getResources().getString(R.string.URL_ARTICLE), getContext()).get(Integer.parseInt(getArguments().getString(ARG_ITEM_ID)));
-            } catch (XmlPullParserException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+                    mItem = loadXmlFromXML(getResources().getString(R.string.URL_ARTICLE), getContext()).get(Integer.parseInt(getArguments().getString(ARG_ITEM_ID)));
+                } catch (XmlPullParserException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+        } else {
+            mItem = new ArticleContent.ArticleItem(getArguments().getString("title"), getArguments().getString("content"), getArguments().getString("details"), getArguments().getString("summary"), getArguments().getString("link"), "", true);
+        }
             Activity activity = this.getActivity();
             CollapsingToolbarLayout appBarLayout = (CollapsingToolbarLayout) activity.findViewById(R.id.toolbar_layout);
             if (appBarLayout != null) {
                 appBarLayout.setTitle(mItem.title);
             }
-        }
+
     }
 
     @Override
